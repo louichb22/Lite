@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description | escape }}">
-
-    <!-- Helpers ================================================== -->
-    {% include 'social-meta-tags' %}
-    <link rel="canonical" href="{{ canonical_url }}">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="{{ settings.primary_color }}">
     <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
     {{ 'style.css.liquid' | asset_url | stylesheet_tag }}
     
@@ -18,8 +13,8 @@
 
 </head>
 
-  <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
-    <div class="wsmenucontainer clearfix">
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+   <div class="wsmenucontainer clearfix">
       <div class="overlapblackbg"></div>
       {% if settings.show_entry_popup %}
       {% include 'entry-popup' %}
