@@ -1,5 +1,29 @@
 {
   "current": {
-    "my_id": "allo"
+    "use_top_header": true,
+    "my_id": "allo",
+    "sections": {
+      "header_top": {
+        "type": "header_top",
+        "settings": {
+          "top_header_menu": "top-menu",
+          "top_header_button": "Accès vendeur",
+          "top_header_button_url": "#"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }

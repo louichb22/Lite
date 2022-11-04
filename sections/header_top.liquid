@@ -1,13 +1,13 @@
 <div class="header_top">
   <div class="header_top_left">
     <div class="header_top_linklist">
-      <a class="header_top_text blue" href="#">À propos</a>
-      <a class="header_top_text blue" href="#">Nous joindre</a>
-      <a class="header_top_text blue" href="#">Proposer un projet</a>
+      {% for link in section.settings.top_header_menu.links %}
+        <a class="header_top_text blue" href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
     </div>
   </div>
   <div class="header_top_right">
-    <a class="header_top_button" href="#">Accès vendeur</a>
+    <a class="header_top_button" href="{{ section.settings.top_header_button_url }}">{{ section.settings.top_header_button }}</a>
   </div>
 </div>
 
@@ -18,6 +18,22 @@
       {
         "type": "header",
         "content": "Top Header"
+      },
+      {
+        "type": "link_list",
+        "id": "top_header_menu",
+        "label": "Top Header Menu"
+      },
+      {
+        "type": "text",
+        "id": "top_header_button",
+        "label": "Button Text",
+        "default": "Button"
+      },
+      {
+        "type": "url",
+        "id": "top_header_button_url",
+        "label": "Button URL"
       }
     ]
   }

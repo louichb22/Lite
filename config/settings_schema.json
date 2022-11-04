@@ -19,11 +19,6 @@
         "id": "use_top_header",
         "label": "Top Header",
         "default": true
-      },
-      {
-        "type": "link_list",
-        "id": "top_header_menu",
-        "label": "Top Header Menu"
       }
     ]
   }
