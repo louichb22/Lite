@@ -1,5 +1,10 @@
 {
     "current": {
-        "top_header": "true"
+      "my_id": "allo"
+    },
+    "presets": {
+      "preset-name": {
+        "my_second_id": "allo"
+      }
     }
-}
+  }
