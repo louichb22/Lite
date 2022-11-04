@@ -8,18 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
   {{ 'style.css' | asset_url | stylesheet_tag }}
-  
   {{ content_for_header }}
-
 </head>
-
 <body>
-
-{% section 'header' %}
-     
-{{ content_for_layout }}
-      
+{% section 'header' %} 
+{{ content_for_layout }}   
 {% section 'footer' %}
-
 </body>
 </html>
