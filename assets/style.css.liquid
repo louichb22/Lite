@@ -1,6 +1,26 @@
+p {
+  font-family: articulat-cf, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h1 h2 h3 h4 h5 h6 {
+  font-family: articulat-heavy-cf, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+a {
+  font-family: articulat-cf, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
 body {
   margin: 0;
-  padding: 0;
 }
 .header_top {
   max-width: 1200px;
@@ -55,4 +75,96 @@ body {
   background-color: white;
   color: black;
   box-shadow: 0 0 0 2px black inset;
+}
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #0F2B55;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+}
+.header_searchbar {
+  grid-column: 1;
+}
+.header_logo_container {
+  grid-column: 2;
+  display: flex;
+  height: 85px;
+  margin: 20px 0;
+  align-items: center;
+  object-fit: contain;
+  justify-content: center;
+}
+.header_left {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+}
+.header_searchbar {
+  padding-left: 40px;
+}
+.header_right {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+}
+.header_cart_container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header_cart_link {
+  margin-left: auto;
+  padding-right: 40px;
+}
+.header_cart_amount {
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 8px;
+  padding-bottom: 2px;
+}
+.header_cart_icon {
+  fill: white;
+  transition: all 0.3s;
+}
+.header_cart_icon:hover {
+  fill: black;
+}
+.header_account {
+  padding-right: 40px;
+  fill: white;
+  transition: all 0.3s;
+}
+.header_account:hover {
+  fill: #0c0c0c;
+}
+.searchbar_styling {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  align-items: center;
+}
+.searchbar_bar {
+  display: flex;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  width: 145px;
+  margin: 0 0 0 20px !important;
+  padding: 0;
+}
+.searchbar_button {
+  display: flex;
+  background: none;
+  border: none;
+  text-decoration: none;
+  width: 20px;
+  margin: 0 20px !important 0 0;
+  padding: 0;
+  cursor: pointer;
 }
