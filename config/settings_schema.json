@@ -1,25 +1,30 @@
 [
     {
-        "name": "theme_info",
-        "theme_name": "Lite",
-        "theme_version": "1.0",
-        "theme_author": "22 Agence Créative",
-        "theme_documentation_url": "https://22agencecreative.ca",
-        "theme_support_url": "mailto:info@22agencecreative.ca"
+      "name": "theme_info",
+      "theme_name": "Lite",
+      "theme_author": "22 Agence Creative",
+      "theme_version": "1.0",
+      "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn"
     },
     {
-        "name": "Header",
+        "name": "Category",
         "settings": [
             {
                 "type": "header",
-                "content": "Header"
+                "content": "My settings"
             },
             {
-                "type": "checkbox",
-                "id": "top_header",
-                "label": "Top Header",
-                "default": "true"
-            }
+                "type": "text",
+                "id": "my_id",
+                "label": "My setting label",
+                "default": "Enter text here"
+            },
+            {
+                "type": "textarea",
+                "id": "my_second_id",
+                "label": "Welcome message",
+                "default": "Welcome to my shop!"
+            }          
         ]
     }
 ]
