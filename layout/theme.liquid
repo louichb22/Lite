@@ -11,7 +11,7 @@
     {{ content_for_header }}
   </head>
   <body>
-    {%- if settings.top_header == true -%}
+    {%- if settings.use_top_header == true -%}
       {% section 'header_top' %}
     {%- endif -%}
     {% section 'header' %}
