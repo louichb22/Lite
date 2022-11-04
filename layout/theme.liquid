@@ -1,17 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Description">
+    <title>{{ shop.name }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
     <meta name="keywords" content="Keywords">
     {{ 'style.css' | asset_url | stylesheet_tag }}
+    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
 </head>
-<body>
+<body id="{{ page_title | handle }}">
 
 { section 'header'}
 
-<h1>{{ page.title }}</h1>
+{{ content_for_layout }}
 
 { section 'footer'}
 
