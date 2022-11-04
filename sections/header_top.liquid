@@ -1,9 +1,9 @@
 <div class="header_top">
   <div class="header_top_left">
     <div class="header_top_linklist">
-      <a class="header_top_text blue" href="#">À propos</a>
-      <a class="header_top_text blue" href="#">Nous joindre</a>
-      <a class="header_top_text blue" href="#">Proposer un projet</a>
+      {% for link in section.settings.top_header_menu %}
+        <a class="header_top_text blue" href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
     </div>
   </div>
   <div class="header_top_right">
