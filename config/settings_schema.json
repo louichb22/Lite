@@ -8,23 +8,22 @@
     "theme_support_email": "info@22agencecreative.ca"
   },
   {
-    "name": "Category",
+    "name": "Header",
     "settings": [
       {
         "type": "header",
-        "content": "My settings"
+        "content": "Top Header"
       },
       {
-        "type": "text",
-        "id": "my_id",
-        "label": "My setting label",
-        "default": "Enter text here"
+        "type": "checkbox",
+        "id": "use_top_header",
+        "label": "Top Header",
+        "default": true
       },
       {
-        "type": "textarea",
-        "id": "my_second_id",
-        "label": "Welcome message",
-        "default": "Welcome to my shop!"
+        "type": "link_list",
+        "id": "top_header_menu",
+        "label": "Top Header Menu"
       }
     ]
   }
