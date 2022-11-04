@@ -13,19 +13,13 @@
 
 </head>
 
-<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
-   <div class="wsmenucontainer clearfix">
-      <div class="overlapblackbg"></div>
-      {% if settings.show_entry_popup %}
-      {% include 'entry-popup' %}
-      {% endif %}
+<body>
 
-      {% section 'header' %}
+{% section 'header' %}
      
-      {{ content_for_layout }}
+{{ content_for_layout }}
       
-	  {% section 'icon-buttons' %}	
-      {% section 'footer' %}
+{% section 'footer' %}
 
       {{ 'jquery.magnific-popup.min.js' | asset_url | script_tag }}
       {{ 'api.jquery.js' | asset_url | script_tag }}
