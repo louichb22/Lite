@@ -8,7 +8,7 @@
         "theme_support_url": "mailto:info@22agencecreative.ca"
     },
     {
-        "name": "t:settings_schema.colors.name",
+        "name": "Header",
         "settings": [
             {
                 "type": "header",
@@ -17,8 +17,8 @@
             {
                 "type": "checkbox",
                 "id": "top_header",
-                "default": "true",
-                "label": "Top Header"
+                "label": "Top Header",
+                "default": "true"
             }
         ]
     }

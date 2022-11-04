@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en" class="noIE">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
-  <title>{{ page_title }}</title>
-  <meta name="description" content="{{ page_description | escape }}">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
-  {{ 'style.css' | asset_url | stylesheet_tag }}
-  {{ content_for_header }}
-</head>
-<body>
-{% section 'header' %} 
-{{ content_for_layout }}   
-{% section 'footer' %}
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png"/>
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ content_for_header }}
+  </head>
+  <body>
+    {%- if settings.top_header == true -%}
+      {% section 'header_top' %}
+    {%- endif -%}
+    {% section 'header' %}
+    {{ content_for_layout }}
+    {% section 'footer' %}
+  </body>
 </html>

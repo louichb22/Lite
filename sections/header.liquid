@@ -1,6 +1,3 @@
-{%- if section.settings.top_header == true -%}
-  {% section 'header_top' %}
-{%- endif -%}
 <div class="header">
   <div class="header_left">
     <div class="header_searchbar">
@@ -51,11 +48,6 @@
       {
         "type": "header",
         "content": "Header"
-      }, {
-        "type": "checkbox",
-        "id": "top_header",
-        "label": "Top header",
-        "default": true
       }
     ]
   }
