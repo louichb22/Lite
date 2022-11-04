@@ -6,7 +6,9 @@
       "header_top": {
         "type": "header_top",
         "settings": {
-          "top_header_menu": "top-menu"
+          "top_header_menu": "top-menu",
+          "top_header_button": "Accès vendeur",
+          "top_header_button_url": "#"
         }
       },
       "header": {
