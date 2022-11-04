@@ -1,15 +1,10 @@
 <!doctype html>
 <html lang="en" class="noIE">
 <head>
-    <!-- Basic page needs ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
-    <!-- Title and description ================================================== -->
     <title>{{ page_title }}</title>
-
-    {% if page_description %}
     <meta name="description" content="{{ page_description | escape }}">
-    {% endif %}
 
     <!-- Helpers ================================================== -->
     {% include 'social-meta-tags' %}
