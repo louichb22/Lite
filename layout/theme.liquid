@@ -13,20 +13,7 @@
     <meta name="theme-color" content="{{ settings.primary_color }}">
     <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
     {{ 'style.css.liquid' | asset_url | stylesheet_tag }}
-
-    {{ 'flexslider.css' | asset_url | stylesheet_tag }}
-    {{ 'flexslider-product.css' | asset_url | stylesheet_tag }}
-
-    {% if template contains "index" %}
-    {%capture apps%}
-    <script src="//player.vimeo.com/api/player.js"></script>
-    {%endcapture%}
-    <script>if(navigator.platform !="Linux x86_64"){  document.write({{apps | json}}); } else { } document.close();</script>
-
-    {% endif %}
-    
-    <!-- Header hook for plugins ================================================== -->
-    {%comment%}{{ content_for_header }}{%endcomment%}{%include "cathaydoyonnaturopathe"%}    
+    {%comment%}{{ content_for_header }}{%endcomment%} 
 
     <!--[if lt IE 9]>
     {{ '//html5shiv.googlecode.com/svn/trunk/html5.js' | script_tag }}
