@@ -11,12 +11,8 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="{{ settings.primary_color }}">
-
-    {% if settings.favicon != empty %}
     <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
-    {% endif %}
-    {{ 'apps.css' | asset_url | stylesheet_tag }}
-    {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css.liquid' | asset_url | stylesheet_tag }}
 
     {{ 'flexslider.css' | asset_url | stylesheet_tag }}
     {{ 'flexslider-product.css' | asset_url | stylesheet_tag }}
@@ -55,7 +51,8 @@
     </script>
     {% include "no_script_styles" %}
 
-  {% render 'bon-loyalty' %}<script defer src='https://d31wum4217462x.cloudfront.net/app/bon-loyalty.js?shop=cathaydoyonnaturopathe.myshopify.com'></script></head>
+  {% render 'bon-loyalty' %}<script defer src='https://d31wum4217462x.cloudfront.net/app/bon-loyalty.js?shop=cathaydoyonnaturopathe.myshopify.com'></script>
+</head>
 
   <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
     <div class="wsmenucontainer clearfix">
