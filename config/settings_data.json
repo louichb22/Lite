@@ -1,10 +1,5 @@
 {
-    "current": {
-      "my_id": "allo"
-    },
-    "presets": {
-      "preset-name": {
-        "my_second_id": "allo"
-      }
-    }
+  "current": {
+    "my_id": "allo"
   }
+}
