@@ -8,7 +8,7 @@
         "theme_support_url": "mailto:info@22agencecreative.ca"
     },
     {
-        "name": "Header",
+        "name": "t:settings_schema.colors.name",
         "settings": [
             {
                 "type": "header",
