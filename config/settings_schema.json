@@ -1,3 +1,25 @@
 [
-
+    {
+        "name": "theme_info",
+        "theme_name": "Lite",
+        "theme_version": "1.0",
+        "theme_author": "22 Agence Créative",
+        "theme_documentation_url": "https://22agencecreative.ca",
+        "theme_support_url": "mailto:info@22agencecreative.ca"
+    },
+    {
+        "name": "Header",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Header"
+            },
+            {
+                "type": "checkbox",
+                "id": "top_header",
+                "default": "true",
+                "label": "Top Header"
+            }
+        ]
+    }
 ]
