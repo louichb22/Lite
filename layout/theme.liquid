@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en" class="noIE">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
-    <title>{{ page_title }}</title>
-    <meta name="description" content="{{ page_description | escape }}">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
-    {{ 'style.css.liquid' | asset_url | stylesheet_tag }}
-    
-    {{ content_for_header }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
+  <link rel="stylesheet" href="{{ 'style.css.liquid' | asset_url }}">
+  
+  {{ content_for_header }}
 
 </head>
 
