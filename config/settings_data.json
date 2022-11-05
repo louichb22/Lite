@@ -28,10 +28,15 @@
           "copyright": "© 2022 <strong>Le Panier Collégial.<\/strong> Tous droits réservés.",
           "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"footer_bot_link\">22 Agence Créative.<\/a>"
         }
+      },
+      "0069bdbd-2dbf-4162-b33d-e1322e671080": {
+        "type": "banner",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-
+      "0069bdbd-2dbf-4162-b33d-e1322e671080"
     ]
   }
 }
