@@ -24,7 +24,9 @@
           "phone": "(819) 911-9911",
           "email": "info@lepaniercollegial.ca",
           "middle_text": "Lorem ipsum dolor sit amet, consectetur adipisci elit,\nsed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrum exercitationem ullam corporis suscipit laboriosam,\nnisi ut aliquid ex ea commodi consequatur. Quis aute.",
-          "footer_menu": "footer"
+          "footer_menu": "footer",
+          "copyright": "© 2022 <strong>Le Panier Collégial.<\/strong> Tous droits réservés.",
+          "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"link\">22 Agence Créative.<\/a>"
         }
       }
     },
