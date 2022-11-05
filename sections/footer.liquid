@@ -14,7 +14,7 @@
         </g>
           </svg>
           </a>
-      <item class="footer_info_item"><i class="far fa-location-dot footer_icon"></i><span class="footer_info_text">475 rue du Cégep, Sherbrooke (Québec)  J1H 2M7</span></item>
+      {% if section.settings.address != 0 %}<item class="footer_info_item"><i class="far fa-location-dot footer_icon"></i><span class="footer_info_text">{{ section.settings.address }}</span></item>{% endif %}
       <item class="footer_info_item"><i class="far fa-phone"></i><span class="footer_info_text">(819) 911-9911</span></item>
       <item class="footer_info_item"><i class="fa-regular fa-envelope"></i><span class="footer_info_text">info@lepaniercollegial.ca</span></item>
     </div>
@@ -35,7 +35,12 @@
         {
         "type": "header",
         "content": "Footer"
-        }
+        },
+      {
+        "type": "text",
+        "id": "address",
+        "label": "Adresse"
+      }
     ]
 }
 {% endschema %}
