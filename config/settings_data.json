@@ -29,15 +29,15 @@
           "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"footer_bot_link\">22 Agence Créative.<\/a>"
         }
       },
-      "0069bdbd-2dbf-4162-b33d-e1322e671080": {
-        "type": "banner",
+      "89ebee19-e190-4091-b98c-db578364b67d": {
+        "type": "image_banner",
         "settings": {
           "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg"
         }
       }
     },
     "content_for_index": [
-      "0069bdbd-2dbf-4162-b33d-e1322e671080"
+      "89ebee19-e190-4091-b98c-db578364b67d"
     ]
   }
 }
