@@ -1,5 +1,5 @@
 <div class="image_section" style="background-image: url('{{ section.settings.image | image_url }}')">
-  <h1 class="image_section_title">{{ section.settings.title | capitalize }}</h1>
+  <h1 class="image_section_title">{{ section.settings.title | upcase }}</h1>
 </div>
 
 {% schema %}
