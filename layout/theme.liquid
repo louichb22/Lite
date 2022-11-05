@@ -11,11 +11,13 @@
     {{ content_for_header }}
   </head>
   <body>
+    <div class="page_container">
     {%- if settings.use_top_header == true -%}
       {% section 'header_top' %}
     {%- endif -%}
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
+    </div>
   </body>
 </html>
