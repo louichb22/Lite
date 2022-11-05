@@ -28,6 +28,10 @@
       {% endfor %}
     </div>
   </div>
+  <div class="footer_bot">
+    <span class="footer_bot_text">{{ section.settings.copyright }}</span>
+    <span class="footer_bot_text">{{ section.settings.author }}</span>
+  </div>
 </div>
 
 {% schema %}
@@ -63,6 +67,20 @@
         "type": "link_list",
         "id": "footer_menu",
         "label": "Plan du site"
+      },
+      {
+        "type": "header",
+        "content": "Bottom Footer"
+      },
+      {
+        "type": "textarea",
+        "id": "copyright",
+        "label": "Texte copyright"
+      },
+      {
+        "type": "textarea",
+        "id": "author",
+        "label": "Texte auteur"
       }
     ]
 }
