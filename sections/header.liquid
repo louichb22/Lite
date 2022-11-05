@@ -41,7 +41,7 @@
   </div>
 </div>
 <div class="header_menu">
-  <item>allo</item>
+  {% for links in linklist %}{% endfor %}
 </div>
 </div>
 {% schema %}
@@ -52,6 +52,11 @@
       {
         "type": "header",
         "content": "Header"
+      },
+      {
+        "type": "link_list",
+        "id": "main_menu",
+        "label": "Main Menu"
       }
     ]
   }
