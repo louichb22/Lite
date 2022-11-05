@@ -26,7 +26,7 @@
     <a href="/cart" class="header_cart_link">
       <div class="header_cart_container">
         <item class="header_cart_amount">
-          {{ cart.total_price | money }}
+          {{ cart.total_price | money_without_currency }}$
         </item>
         <item class="header_cart_icon">
           <svg id="cart_icon" data-name="cart_icon" xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 144 144"><path d="M136.58,136.38l-14.96-104.71c-.47-3.3-3.29-5.74-6.61-5.74h-20.67v-3.59c0-5.97-2.32-11.58-6.54-15.8-4.22-4.22-9.83-6.54-15.8-6.54-12.31,0-22.33,10.02-22.33,22.33v3.59H28.99c-3.33,0-6.15,2.44-6.61,5.74L7.42,136.38c-.27,1.92,.3,3.86,1.57,5.32,1.27,1.46,3.11,2.3,5.05,2.3h115.93c1.94,0,3.78-.84,5.05-2.3,1.27-1.46,1.84-3.41,1.57-5.32ZM58.57,22.33c0-7.4,6.02-13.43,13.43-13.43,3.59,0,6.96,1.4,9.5,3.93,2.53,2.53,3.93,5.91,3.93,9.49v3.59h-26.86v-3.59ZM21.73,130.64l13.06-91.35h14.88v12.31c0,2.46,1.99,4.45,4.45,4.45s4.45-2,4.45-4.45v-12.31h26.86v12.31c0,2.46,2,4.45,4.45,4.45s4.45-2,4.45-4.45v-12.31h14.88l13.06,91.35H21.73Z"/></svg>
@@ -42,7 +42,7 @@
 </div>
 <div class="header_menu">
   {% for link in section.settings.main_menu.links %}
-    <a class="header_menu_item{% if link.active %} active{% endif %}{% if link.links.size >= 0 %} has_children{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+    <a class="header_menu_item{% if link.active %} active{% endif %}{% if link.links.size > 0 %} has_children{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
   {% endfor %}
 </div>
 </div>
