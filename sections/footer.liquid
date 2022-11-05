@@ -15,8 +15,8 @@
           </svg>
           </a>
       {% if section.settings.address == blank %}{% else %}<item class="footer_info_item"><i class="far fa-location-dot footer_icon"></i><span class="footer_info_text">{{ section.settings.address }}</span></item>{% endif %}
-      {% if section.settings.phone == blank %}{% else %}<item class="footer_info_item"><i class="far fa-phone"></i><span class="footer_info_text">{{ section.settings.address }}</span></item>{% endif %}
-      {% if section.settings.email == blank %}{% else %}<item class="footer_info_item"><i class="fa-regular fa-envelope"></i><span class="footer_info_text">{{ section.settings.address }}</span></item>{% endif %}
+      {% if section.settings.phone == blank %}{% else %}<item class="footer_info_item"><i class="far fa-phone"></i><span class="footer_info_text">{{ section.settings.phone }}</span></item>{% endif %}
+      {% if section.settings.email == blank %}{% else %}<item class="footer_info_item"><i class="fa-regular fa-envelope"></i><span class="footer_info_text">{{ section.settings.email }}</span></item>{% endif %}
     </div>
     <div class="footer_middle">
       
