@@ -14,6 +14,7 @@
       "header": {
         "type": "header",
         "settings": {
+          "main_menu": "main-menu"
         }
       },
       "footer": {
