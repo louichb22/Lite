@@ -14,8 +14,8 @@
         </g>
           </svg>
           </a>
-      {% if section.settings.address == blank %}{% else %}<item class="footer_info_item"><i class="far fa-location-dot footer_icon"></i><span class="footer_text">{{ section.settings.address }}</span></item>{% endif %}
-      {% if section.settings.phone == blank %}{% else %}<a href="tel:{{ section.settings.phone }}"<item class="footer_info_item"><i class="far fa-phone"></i><span class="footer_text">{{ section.settings.phone }}</span></item></a>{% endif %}
+      {% if section.settings.address == blank %}{% else %}<item class="footer_info_item"><i class="fa-regular fa-location-dot footer_icon"></i><span class="footer_text">{{ section.settings.address }}</span></item>{% endif %}
+      {% if section.settings.phone == blank %}{% else %}<a href="tel:{{ section.settings.phone }}"<item class="footer_info_item"><i class="fa-regular fa-phone"></i><span class="footer_text">{{ section.settings.phone }}</span></item></a>{% endif %}
       {% if section.settings.email == blank %}{% else %}<a href="mailto:{{ section.settings.mail }}""><item class="footer_info_item"><i class="fa-regular fa-envelope"></i><span class="footer_text">{{ section.settings.email }}</span></item></a>{% endif %}
     </div>
     <div class="footer_middle">
