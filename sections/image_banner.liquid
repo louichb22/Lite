@@ -1,0 +1,26 @@
+<div class="image_section" style="background-image: url('{{ section.settings.image | image_url }}')">
+  <h1 class="image_section_title">{{ section.settings.title | upcase }}</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Sélectionner une image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titre"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Banner"
+      }
+    ]
+  }
+{% endschema %}

@@ -14,16 +14,31 @@
       "header": {
         "type": "header",
         "settings": {
+          "main_menu": "main-menu"
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
+          "address": "475 rue du Cégep,<br>Sherbrooke (Québec)  J1H 2M7",
+          "phone": "(819) 911-9911",
+          "email": "info@lepaniercollegial.ca",
+          "middle_text": "Lorem ipsum dolor sit amet, consectetur adipisci elit,\nsed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrum exercitationem ullam corporis suscipit laboriosam,\nnisi ut aliquid ex ea commodi consequatur. Quis aute.",
+          "footer_menu": "footer",
+          "copyright": "© 2022 <strong>Le Panier Collégial.<\/strong> Tous droits réservés.",
+          "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"footer_bot_link\">22 Agence Créative.<\/a>"
+        }
+      },
+      "89ebee19-e190-4091-b98c-db578364b67d": {
+        "type": "image_banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg",
+          "title": "L'économie<br>étudiante d'ici"
         }
       }
     },
     "content_for_index": [
-
+      "89ebee19-e190-4091-b98c-db578364b67d"
     ]
   }
 }
