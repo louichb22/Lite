@@ -23,6 +23,7 @@
     </div>
     <div class="footer_right">
       <h6 class="footer_text strong">Plan du site</h6>
+      {% for link in section.settings.footer_menu.links %}{% endfor %}
     </div>
   </div>
 </div>
@@ -55,6 +56,11 @@
         "type": "textarea",
         "id": "middle_text",
         "label": "Texte au centre"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu",
+        "label": "Plan du site"
       }
     ]
 }
