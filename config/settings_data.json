@@ -32,7 +32,8 @@
       "89ebee19-e190-4091-b98c-db578364b67d": {
         "type": "image_banner",
         "settings": {
-          "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg"
+          "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg",
+          "title": "L'économie<br>étudiante d'ici"
         }
       }
     },
