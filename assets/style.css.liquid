@@ -192,11 +192,11 @@ body {
 .header_menu_item:hover{
   color:black;
 }
-.header_menu_item has_children::after{
+.header_menu_item.has_children::after{
   content: '>';
   margin-left:6px;
 }
-.header_menu_item .active::after{
+.header_menu_item.active::after{
   display:block;
   content: '';
   width:100%;
