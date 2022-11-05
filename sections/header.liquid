@@ -41,7 +41,9 @@
   </div>
 </div>
 <div class="header_menu">
-  {% for links in linklist %}{% endfor %}
+  {% for link in section.settings.main_menu.links %}
+    <a class="main_menu_item" href="{{ link.url }}">{{ link.title }}</a>
+  {% endfor %}
 </div>
 </div>
 {% schema %}
