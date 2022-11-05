@@ -20,6 +20,9 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "address": "475 rue du Cégep, Sherbrooke (Québec)  J1H 2M7",
+          "phone": "(819) 911-9911",
+          "email": "info@lepaniercollegial.ca"
         }
       }
     },
