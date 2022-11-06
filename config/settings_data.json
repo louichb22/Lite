@@ -42,7 +42,7 @@
           "099b6eb7-02d0-4e9a-a884-802c7eb9c073": {
             "type": "slide",
             "settings": {
-              "text": "Estrinema",
+              "text": "Projet 1",
               "text_color": "#fff",
               "link": "shopify:\/\/products\/apples"
             }
@@ -54,11 +54,20 @@
               "text_color": "#fff",
               "link": "#"
             }
+          },
+          "640e8d99-7708-4691-a7e4-fb1923d8a8b1": {
+            "type": "slide",
+            "settings": {
+              "text": "Projet 3",
+              "text_color": "#fff",
+              "link": "#"
+            }
           }
         },
         "block_order": [
           "099b6eb7-02d0-4e9a-a884-802c7eb9c073",
-          "e6d01668-e008-4729-83ad-e52d5a58d75d"
+          "e6d01668-e008-4729-83ad-e52d5a58d75d",
+          "640e8d99-7708-4691-a7e4-fb1923d8a8b1"
         ],
         "settings": {
         }
