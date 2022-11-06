@@ -3,7 +3,7 @@
   {% for block in section.blocks %}
     <div class="slideshow_item fade">
       <a href="{{ block.settings.link }}">
-        <div style="background-image:url('{{ block.settings.image | image_url }}')" class="slideshow_item_container">
+        <div style="{% if block.settings.image == blank %}background-color:black;{% else %}background-image:url('{{ block.settings.image | image_url }}'){% endif %}" class="slideshow_item_container">
           <h2 class="slideshow_text" style="color:{{ block.settings.text_color }}">{{ block.settings.text }}</h2>
         </div>
       </a>
