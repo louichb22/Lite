@@ -19,6 +19,6 @@
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
-    <script src="{{ custom_scripts.js | asset_url }}"></script>
+    {{ 'custom_scripts.js' | asset_url | script_tag }}
   </body>
 </html>
