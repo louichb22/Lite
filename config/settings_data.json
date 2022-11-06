@@ -38,6 +38,19 @@
       },
       "4e607015-7502-443b-afaf-b2922b49fd32": {
         "type": "slideshow",
+        "blocks": {
+          "099b6eb7-02d0-4e9a-a884-802c7eb9c073": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg",
+              "text": "Test",
+              "link": "shopify:\/\/products\/apples"
+            }
+          }
+        },
+        "block_order": [
+          "099b6eb7-02d0-4e9a-a884-802c7eb9c073"
+        ],
         "settings": {
         }
       }
