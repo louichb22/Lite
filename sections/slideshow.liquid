@@ -1,19 +1,11 @@
 <div class="slideshow">
 
-  <div class="slideshow_item fade">
-    <img src="img1.jpg" style="width:100%">
-    <div class="slideshow_text">Caption Text</div>
+  {% for block in section.blocks %}
+    <div class="slideshow_item fade">
+      <img src="{{ block.settings.image | image_url }}" class="slideshow_image">
+      <h2 class="slideshow_text">{{ block.settings.text }}</h2>
   </div>
-
-  <div class="slideshow_item fade">
-    <img src="img2.jpg" style="width:100%">
-    <div class="slideshow_text">Caption Two</div>
-  </div>
-
-  <div class="slideshow_item fade">
-    <img src="img3.jpg" style="width:100%">
-    <div class="slideshow_text">Caption Three</div>
-  </div>
+  {% endfor %}
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
