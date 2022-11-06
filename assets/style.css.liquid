@@ -363,17 +363,21 @@ a .footer_text:hover{
 }
 .active_slide{
   display:block;
+  animation-name: translate-in;
+  animation-duration: 0.5s;
 }
 .inactive_slide{
   display:none;
-}
-.translate_in {
-  animation-name: translate;
+  animation-name: translate-out;
   animation-duration: 0.5s;
 }
-@keyframes translate {
+@keyframes translate-in {
   from {transform: translateX(-100%);} 
   to {transform: translateX(0%);}
+}
+@keyframes translate-out {
+  from {transform: translateX(0%);} 
+  to {transform: translateX(100%);}
 }
 .slideshow_item_container{
   aspect-ratio: 3.4 / 1;
