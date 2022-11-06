@@ -2,9 +2,11 @@
 
   {% for block in section.blocks %}
     <div class="slideshow_item fade">
-      <img src="{{ block.settings.image | image_url }}" class="slideshow_image">
-      <h2 class="slideshow_text">{{ block.settings.text }}</h2>
-  </div>
+      <a href="{{ block.settings.link }}">
+        <img src="{{ block.settings.image | image_url }}" class="slideshow_image">
+        <h2 class="slideshow_text">{{ block.settings.text }}</h2>
+      </a>
+    </div>
   {% endfor %}
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
