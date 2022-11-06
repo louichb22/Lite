@@ -35,10 +35,16 @@
           "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg",
           "title": "L'économie<br>étudiante d'ici"
         }
+      },
+      "4e607015-7502-443b-afaf-b2922b49fd32": {
+        "type": "slideshow",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-      "89ebee19-e190-4091-b98c-db578364b67d"
+      "89ebee19-e190-4091-b98c-db578364b67d",
+      "4e607015-7502-443b-afaf-b2922b49fd32"
     ]
   }
 }
