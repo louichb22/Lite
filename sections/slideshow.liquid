@@ -3,8 +3,9 @@
   {% for block in section.blocks %}
     <div class="slideshow_item fade">
       <a href="{{ block.settings.link }}">
-        <img src="{{ block.settings.image | image_url }}" class="slideshow_image">
-        <h2 class="slideshow_text">{{ block.settings.text }}</h2>
+        <div style="background-image:url('{{ block.settings.image | image_url }}')" class="slideshow_image">
+          <h2 class="slideshow_text">{{ block.settings.text }}</h2>
+        </div>
       </a>
     </div>
   {% endfor %}
