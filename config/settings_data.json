@@ -26,7 +26,7 @@
           "middle_text": "Lorem ipsum dolor sit amet, consectetur adipisci elit,\nsed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrum exercitationem ullam corporis suscipit laboriosam,\nnisi ut aliquid ex ea commodi consequatur. Quis aute.",
           "footer_menu": "footer",
           "copyright": "© 2022 <strong>Le Panier Collégial.<\/strong> Tous droits réservés.",
-          "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"footer_bot_link\" target=\"_blank\">22 Agence Créative.<\/a>"
+          "author": "Une conception de <a href=\"https:\/\/22agencecreative.ca\" class=\"footer_bot_link\" target=\"_blank\"><strong>22 Agence Créative.<\/strong><\/a>"
         }
       },
       "89ebee19-e190-4091-b98c-db578364b67d": {
@@ -78,7 +78,7 @@
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7": {
         "type": "mission_section",
         "settings": {
-          "title_color": "#0F2B55",
+          "title_color": "#0f2b55",
           "title": "Notre mission"
         }
       }
