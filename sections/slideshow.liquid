@@ -1,4 +1,5 @@
-<div class="slideshow">
+<div class="section_container">
+  <div class="slideshow">
 
   {% for block in section.blocks %}
     <div class="slideshow_item active_slide">
@@ -16,6 +17,7 @@
 {% if section.settings.button_text != blank %}<div class="container1200" style="margin-bottom:46px">
   <div href="{{ section.settings.button_link }}" class="main_btn"><span class="main_btn_text">{{ section.settings.button_text }}</span></div>
 </div>{% endif %}
+</div>
 
 {% schema %}
   {
