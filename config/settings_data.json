@@ -78,6 +78,8 @@
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7": {
         "type": "mission_section",
         "settings": {
+          "title_color": "#0F2B55",
+          "title": "Titre Titre Titre Titre"
         }
       }
     },
