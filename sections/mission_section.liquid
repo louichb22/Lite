@@ -1,13 +1,20 @@
 <div style="background-color:{{ section.settings.bg_color }}">
   <div class="section_container_1200">
-    <h2 class="section_title">title</h1>
+    <h2 class="section_title" style="color:{{ section.settings.title_color }}">title</h1>
   </div>
 </div>
 
 {% schema %}
   {
     "name": "Mission Section",
-    "settings": [],
+    "settings": [
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Couleur du titre",
+        "default": "#0F2B55"
+      }
+    ],
     "presets": [
       {
         "name": "Mission Section"
