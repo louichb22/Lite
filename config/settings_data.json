@@ -74,11 +74,17 @@
           "button_text": "Voir tous les projets",
           "button_link": "shopify:\/\/collections\/all"
         }
+      },
+      "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7": {
+        "type": "mission_section",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "89ebee19-e190-4091-b98c-db578364b67d",
-      "4e607015-7502-443b-afaf-b2922b49fd32"
+      "4e607015-7502-443b-afaf-b2922b49fd32",
+      "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7"
     ]
   }
 }
