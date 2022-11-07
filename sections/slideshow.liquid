@@ -13,11 +13,27 @@
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+{% if section.settings.button_text != blank %}<div class="container1200">
+  <a href="{{ section.settings.button_link }}">
+    <button class="main_btn">{{ settings.section.button_text }}</button>
+  </a>
+</div>{% endif %}
 
 {% schema %}
   {
     "name": "Slideshow",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Texte du bouton"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Lien du bouton"
+      }
+    ],
     "blocks": [
       {
         "name": "Slide",
