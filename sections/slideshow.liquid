@@ -14,9 +14,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 {% if section.settings.button_text != blank %}<div class="container1200">
-  <a href="{{ section.settings.button_link }}">
-    <button class="main_btn">{{ settings.section.button_text }}</button>
-  </a>
+  <a href="{{ section.settings.button_link }}" class="main_btn">{{ settings.section.button_text | upcase }}</a>
 </div>{% endif %}
 
 {% schema %}
