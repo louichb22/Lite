@@ -70,6 +70,7 @@
           "640e8d99-7708-4691-a7e4-fb1923d8a8b1"
         ],
         "settings": {
+          "bg_color": "#fafafa",
           "button_text": "Voir tous les projets",
           "button_link": "shopify:\/\/collections\/all"
         }
