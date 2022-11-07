@@ -43,7 +43,7 @@
             "type": "slide",
             "settings": {
               "text": "Projet 1",
-              "text_color": "#fff",
+              "text_color": "#ffffff",
               "link": "shopify:\/\/products\/apples"
             }
           },
@@ -51,7 +51,7 @@
             "type": "slide",
             "settings": {
               "text": "Projet 2",
-              "text_color": "#fff",
+              "text_color": "#ffffff",
               "link": "#"
             }
           },
@@ -59,7 +59,7 @@
             "type": "slide",
             "settings": {
               "text": "Projet 3",
-              "text_color": "#fff",
+              "text_color": "#ffffff",
               "link": "#"
             }
           }
@@ -70,6 +70,8 @@
           "640e8d99-7708-4691-a7e4-fb1923d8a8b1"
         ],
         "settings": {
+          "button_text": "Voir tous les projets",
+          "button_link": "shopify:\/\/collections\/all"
         }
       }
     },
