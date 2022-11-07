@@ -1,3 +1,4 @@
+<div style="background-color:{{ section.settings.bg_color }}">
 <div class="section_container_1200">
   <div class="slideshow">
 
@@ -18,11 +19,18 @@
   <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text">{{ section.settings.button_text }}</span></a></div>
 {% endif %}
 </div>
+</div>
 
 {% schema %}
   {
     "name": "Slideshow",
     "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Couleur de fond",
+        "default": "#fff"
+      },
       {
         "type": "text",
         "id": "button_text",
