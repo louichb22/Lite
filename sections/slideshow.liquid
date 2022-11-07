@@ -15,7 +15,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_link }}"><div class="main_btn" style="margin-top:50px"><span class="main_btn_text">{{ section.settings.button_text }}</span></div></a>
+  <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text">{{ section.settings.button_text }}</span></a></div>
 {% endif %}
 </div>
 
