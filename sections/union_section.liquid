@@ -1,7 +1,7 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
     <div class="union_section">
-      <h2 class="section_title">{{ section.settings.title }}</h2>
+      <h2 class="section_title" style="color:{{ section.settings.title_color }}">{{ section.settings.title }}</h2>
     </div>
   </div>
 </div>
@@ -18,9 +18,15 @@
       },
       {
         "type": "text",
-        "id": "titre",
+        "id": "title",
         "label": "Titre de section",
         "default": "L'union fait la force"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Couleur du titre",
+        "default": "#ffffff"
       }
     ],
     "presets": [
