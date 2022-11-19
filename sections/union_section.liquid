@@ -2,6 +2,7 @@
   <div class="section_container_1200">
     <div class="union_section">
       <h2 class="section_title" style="color:{{ section.settings.title_color }}">{{ section.settings.title }}</h2>
+      <p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.text }}</p>
     </div>
   </div>
 </div>
@@ -26,6 +27,18 @@
         "type": "color",
         "id": "title_color",
         "label": "Couleur du titre",
+        "default": "#ffffff"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Texte de la section",
+        "default": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Couleur du texte",
         "default": "#ffffff"
       }
     ],
