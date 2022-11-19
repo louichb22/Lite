@@ -36,47 +36,6 @@
           "title": "L'économie<br>étudiante d'ici"
         }
       },
-      "4e607015-7502-443b-afaf-b2922b49fd32": {
-        "type": "slideshow",
-        "blocks": {
-          "099b6eb7-02d0-4e9a-a884-802c7eb9c073": {
-            "type": "slide",
-            "settings": {
-              "text": "Projet 1",
-              "text_color": "#ffffff",
-              "link": "shopify:\/\/products\/apples"
-            }
-          },
-          "e6d01668-e008-4729-83ad-e52d5a58d75d": {
-            "type": "slide",
-            "settings": {
-              "text": "Projet 2",
-              "text_color": "#ffffff",
-              "link": "#"
-            }
-          },
-          "640e8d99-7708-4691-a7e4-fb1923d8a8b1": {
-            "type": "slide",
-            "settings": {
-              "text": "Projet 3",
-              "text_color": "#ffffff",
-              "link": "#"
-            }
-          }
-        },
-        "block_order": [
-          "099b6eb7-02d0-4e9a-a884-802c7eb9c073",
-          "e6d01668-e008-4729-83ad-e52d5a58d75d",
-          "640e8d99-7708-4691-a7e4-fb1923d8a8b1"
-        ],
-        "settings": {
-          "bg_color": "#f4f4f4",
-          "button_text": "Voir tous les projets",
-          "button_link": "shopify:\/\/collections\/all",
-          "button_text_color": "#0F2B55",
-          "button_color": "#ffffff"
-        }
-      },
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7": {
         "type": "mission_section",
         "blocks": {
@@ -127,16 +86,41 @@
           "text_color": "#ffffff",
           "button_text": "En savoir plus",
           "button_link": "",
-          "button_text_color": "#0F2B55",
+          "button_text_color": "#0f2b55",
           "button_color": "#ffffff",
-          "button_text_color_hover": "#fff",
+          "button_text_color_hover": "#ffffff",
+          "button_color_hover": "#000000"
+        }
+      },
+      "9df808ab-7991-450a-a9bf-512e626600a9": {
+        "type": "slideshow",
+        "blocks": {
+          "9e9c57d6-db98-4d6f-b59d-894b3c546775": {
+            "type": "slide",
+            "settings": {
+              "text": "Estrinema",
+              "text_color": "#fff",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "9e9c57d6-db98-4d6f-b59d-894b3c546775"
+        ],
+        "settings": {
+          "bg_color": "#fafafa",
+          "button_text": "voir tous les projets",
+          "button_link": "",
+          "button_text_color": "#ffffff",
+          "button_color": "#0F2B55",
+          "button_text_color_hover": "#ffffff",
           "button_color_hover": "#000000"
         }
       }
     },
     "content_for_index": [
       "89ebee19-e190-4091-b98c-db578364b67d",
-      "4e607015-7502-443b-afaf-b2922b49fd32",
+      "9df808ab-7991-450a-a9bf-512e626600a9",
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7",
       "f471936a-7c84-45f9-a6a2-0f9cb17c77c7"
     ]
