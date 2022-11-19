@@ -14,7 +14,8 @@
     background-color:{{ section.settings.button_color }}
   }
   .main_btn_text:hover{
-    background-color:black;
+    color:{{ section.settings.button_text_color_hover }};
+    background-color:{{ section.settings.button_text_color_hover }};
   }
 </style>
 
@@ -73,6 +74,18 @@
         "type": "color",
         "id": "button_color",
         "label": "Couleur du bouton",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color_hover",
+        "label": "Couleur du texte du bouton hover",
+        "default": "#0F2B55"
+      },
+      {
+        "type": "color",
+        "id": "button_color_hover",
+        "label": "Couleur du bouton hover",
         "default": "#ffffff"
       }
     ],
