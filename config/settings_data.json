@@ -79,7 +79,9 @@
         "type": "mission_section",
         "settings": {
           "title_color": "#0f2b55",
-          "title": "Notre mission"
+          "title": "Notre mission",
+          "text_color": "#0F2B55",
+          "text": "Le Panier Collégial offre à la <strong>communauté collégiale<\/strong> des trois institutions sherbrookoises l’opportunité de mettre en marché le fruit de projets à nature entrepreneuriale. C’est près de <strong>7000 étudiantes et étudiants<\/strong> qui ont accès à cette plateforme transactionnelle adaptée à leurs besoins!<br>\nChaque transaction sur le Panier Collégial soutient directement la relève entrepreneuriale étudiante en contribuant de façon significative à <strong>propulser<\/strong> leurs projets, tout en <strong>favorisant l’économie locale.<\/strong>"
         }
       }
     },
