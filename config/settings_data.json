@@ -72,7 +72,9 @@
         "settings": {
           "bg_color": "#f4f4f4",
           "button_text": "Voir tous les projets",
-          "button_link": "shopify:\/\/collections\/all"
+          "button_link": "shopify:\/\/collections\/all",
+          "button_text_color": "#0F2B55",
+          "button_color": "#ffffff"
         }
       },
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7": {
@@ -118,7 +120,17 @@
       "f471936a-7c84-45f9-a6a2-0f9cb17c77c7": {
         "type": "union_section",
         "settings": {
-          "bg": "#0F2B55"
+          "bg": "#0f2b55",
+          "title": "L'union fait la force",
+          "title_color": "#ffffff",
+          "text": "Lorem ipsum dolor sit amet",
+          "text_color": "#ffffff",
+          "button_text": "En savoir plus",
+          "button_link": "",
+          "button_text_color": "#0F2B55",
+          "button_color": "#ffffff",
+          "button_text_color_hover": "#fff",
+          "button_color_hover": "#000000"
         }
       }
     },
