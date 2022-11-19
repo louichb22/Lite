@@ -16,10 +16,21 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 {% if section.settings.button_text != blank %}
-  <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text">{{ section.settings.button_text }}</span></a></div>
+  <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text slideshow_button">{{ section.settings.button_text }}</span></a></div>
 {% endif %}
 </div>
 </div>
+
+<style>
+  .slideshow_button{
+    color:{{ section.settings.button_text_color }};
+    background-color:{{ section.settings.button_color }}
+  }
+  .slideshow_button:hover{
+    color:{{ section.settings.button_text_color_hover }};
+    background-color:{{ section.settings.button_color_hover }};
+  }
+</style>
 
 {% schema %}
   {
@@ -104,9 +115,6 @@
 {% endschema %}
 
 {% stylesheet %}
-  .main_btn_text{
-    background-color:{{ section.settings.button_color }}
-  }
 {% endstylesheet %}
 
 {% javascript %}
