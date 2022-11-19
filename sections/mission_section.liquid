@@ -1,6 +1,7 @@
 <div style="background-color:{{ section.settings.bg_color }}">
   <div class="section_container_1200">
     <h2 class="section_title centered_text" style="color:{{ section.settings.title_color }}">{{ section.settings.title }}</h2>
+    <span class="section_text centered_text" style="color:{{ section.settings.text_color }}"
   </div>
 </div>
 
@@ -18,6 +19,18 @@
         "type": "text",
         "id": "title",
         "label": "Titre de section",
+        "default": "Titre"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Couleur du texte",
+        "default": "#0F2B55"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Texte",
         "default": "Titre"
       }
     ],
