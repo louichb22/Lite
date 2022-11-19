@@ -85,10 +85,28 @@
               "text": "soutenir<br>\nla communauté<br>\nétudiante",
               "color": "#0f2b55"
             }
+          },
+          "ed7e32ed-1f88-4470-9129-21cfb44bddd4": {
+            "type": "icon",
+            "settings": {
+              "icon": "",
+              "text": "Lorem ipsum dolor sit amet",
+              "color": "#0F2B55"
+            }
+          },
+          "1d16ba2c-0330-4922-8149-dece104001b2": {
+            "type": "icon",
+            "settings": {
+              "icon": "",
+              "text": "Lorem ipsum dolor sit amet",
+              "color": "#0F2B55"
+            }
           }
         },
         "block_order": [
-          "5e6878a0-5129-4801-9dd0-22b3af8cafec"
+          "5e6878a0-5129-4801-9dd0-22b3af8cafec",
+          "ed7e32ed-1f88-4470-9129-21cfb44bddd4",
+          "1d16ba2c-0330-4922-8149-dece104001b2"
         ],
         "settings": {
           "title_color": "#0f2b55",
