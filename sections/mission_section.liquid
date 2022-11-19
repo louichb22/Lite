@@ -4,6 +4,9 @@
     <div class="container_800">
       <p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.text }}</p>
     </div>
+    <div class="icon_text_section">
+      <div class="icon_text_section_item">
+        <img class="icon_text_section_image" src="{{ block.settings.icon }}">
   </div>
 </div>
 
@@ -36,6 +39,19 @@
         "default": "Lorem ipsum dolor sit amet"
       }
     ],
+    "blocks": [
+     {
+       "name": "Icône avec texte",
+       "type": "image",
+       "settings": [
+         {
+           "type": "url",
+           "id": "icon",
+           "label": "Source de l'icône"
+         }
+       ]
+     }
+   ],
     "presets": [
       {
         "name": "Mission Section"
