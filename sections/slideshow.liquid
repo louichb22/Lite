@@ -16,7 +16,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 {% if section.settings.button_text != blank %}
-  <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text">{{ section.settings.button_text }}</span></a></div>
+  <div class="main_btn" style="margin-top:50px"><a href="{{ section.settings.button_link }}"><span class="main_btn_text" style="color:{{ section.settings.button_text_color }};background-color:{{ section.settings.button_color }}">{{ section.settings.button_text }}</span></a></div>
 {% endif %}
 </div>
 </div>
@@ -40,6 +40,18 @@
         "type": "url",
         "id": "button_link",
         "label": "Lien du bouton"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Couleur du texte du bouton",
+        "default": "#0F2B55"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Couleur du bouton",
+        "default": "#ffffff"
       }
     ],
     "blocks": [
