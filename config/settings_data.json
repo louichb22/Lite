@@ -99,7 +99,7 @@
             "type": "slide",
             "settings": {
               "text": "Estrinema",
-              "text_color": "#fff",
+              "text_color": "#ffffff",
               "link": ""
             }
           }
@@ -112,7 +112,7 @@
           "button_text": "voir tous les projets",
           "button_link": "",
           "button_text_color": "#ffffff",
-          "button_color": "#e22120",
+          "button_color": "#0f2b55",
           "button_text_color_hover": "#ffffff",
           "button_color_hover": "#000000"
         }
