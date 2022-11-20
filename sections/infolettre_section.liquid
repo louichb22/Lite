@@ -8,12 +8,12 @@
         {% form 'customer' %}
           {{ form.errors | default_errors }}
           {% if form.posted_successfully? %}
-            <p>Merci!</p>
+            <p><strong>Merci!</strong></p>
             {% else %}
             <div class="infolettre_form">
             <input type="hidden" name="contact[tags]" value="newsletter">
       <input type="email"
-        style="background-color:white; border: none; width: 100%; font-family: articulat-cf, sans-serif; font-weight: 500; font-style: normal; font-size:14pt;"
+        style="background-color:white; border: none; width: 100%; font-family: articulat-cf, sans-serif; font-weight: 500; font-style: normal; font-size:14px;"
         name="contact[email]"
         id="Email"
         value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
