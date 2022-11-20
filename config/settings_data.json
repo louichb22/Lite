@@ -85,7 +85,7 @@
           "text": "Les trois institutions collégiales de Sherbrooke travaillent conjointement le développement de compétences entrepreneuriales, et ce, depuis plusieurs années. Le Panier collégial représente le dénouement de cette collaboration en offrant une vitrine inédite aux projets réalisés dans nos trois institutions.",
           "text_color": "#ffffff",
           "button_text": "En savoir plus",
-          "button_link": "",
+          "button_link": "#",
           "button_text_color": "#0f2b55",
           "button_color": "#ffffff",
           "button_text_color_hover": "#ffffff",
@@ -110,7 +110,7 @@
         "settings": {
           "bg_color": "#fafafa",
           "button_text": "voir tous les projets",
-          "button_link": "",
+          "button_link": "#",
           "button_text_color": "#ffffff",
           "button_color": "#0f2b55",
           "button_text_color_hover": "#ffffff",
