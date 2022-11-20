@@ -15,11 +15,11 @@
         name="contact[email]"
         id="Email"
         value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
-        placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+        placeholder="Votre adresse courriel"
         autocorrect="off"
         autocapitalize="off">
       <button type="submit" name="commit" id="Subscribe">
-        <span>{{ 'general.newsletter_form.submit' | t }}</span>
+        <span>Envoyer</span>
       </button>
     {% endif %}
   {% endform %}
