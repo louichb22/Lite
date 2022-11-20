@@ -143,11 +143,10 @@
         "type": "infolettre_section",
         "settings": {
           "bg": "#ffffff",
-          "text_color": "#0F2B55",
+          "text_color": "#0f2b55",
           "section_title": "Infolettre",
           "section_text": "Afin de rester au courant des nouveaux projets, et de l’entreprenariat étudiant au grand complet!",
-          "infolettre_width": 200,
-          "infolettre": "CODE INFOLETTRE"
+          "infolettre_width": 300
         }
       }
     },
