@@ -138,6 +138,17 @@
           "button_color_hover": "#212121",
           "button_text_color_hover": "#ffffff"
         }
+      },
+      "b8692203-3c8c-4a42-99a7-404275821b9b": {
+        "type": "infolettre_section",
+        "settings": {
+          "bg": "#ffffff",
+          "text_color": "#000000",
+          "section_title": "",
+          "section_text": "",
+          "infolettre_width": 200,
+          "infolettre": ""
+        }
       }
     },
     "content_for_index": [
@@ -145,7 +156,8 @@
       "9df808ab-7991-450a-a9bf-512e626600a9",
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7",
       "f471936a-7c84-45f9-a6a2-0f9cb17c77c7",
-      "4008f1f7-2694-4bf9-95b0-82fdee08225b"
+      "4008f1f7-2694-4bf9-95b0-82fdee08225b",
+      "b8692203-3c8c-4a42-99a7-404275821b9b"
     ]
   }
 }
