@@ -2,11 +2,16 @@
   <div class="section_container_1200">
     <h2 class="section_title_noarrow" style="color:{{ section.settings.text_color }}">allo</h2>
     <p class="section_text" style="color:{{ section.settings.text_color }}">allo</p>
-    <div class="main_btn"><a href="#"><span class="main_btn_text">allo</span></a></div>
+    <div class="main_btn" style="margin-top:50px; margin-bottom:70px;"><a href="{{ section.settings.button_link }}"><span class="main_btn_text text_section_button">{{ section.settings.button_text }}</span></a></div>
   </div>
 </div>
 
-
+<style>
+  .text_section_button{
+    color: {{ section.settings.button_text_color }};
+    background-color: {{ section.settings.button_color }};
+  }
+</style>
 
 {% schema %}
   {
@@ -23,6 +28,30 @@
         "id": "text_color",
         "label": "Couleur du texte",
         "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Couleur du bouton",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Couleur du texte du bouton",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "button_color_hover",
+        "label": "Couleur du bouton (hover)",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color_hover",
+        "label": "Couleur du texte du bouton (hover)",
+        "default": "#ffffff"
       }
     ],
     "presets": [
