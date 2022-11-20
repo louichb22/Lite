@@ -13,6 +13,7 @@
             <div class="infolettre_form">
             <input type="hidden" name="contact[tags]" value="newsletter">
       <input type="email"
+        style="background-color:white; border: none;"
         name="contact[email]"
         id="Email"
         value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
