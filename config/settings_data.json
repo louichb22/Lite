@@ -122,13 +122,20 @@
           "button_text_color_hover": "#ffffff",
           "button_color_hover": "#000000"
         }
+      },
+      "4008f1f7-2694-4bf9-95b0-82fdee08225b": {
+        "type": "simple_text_section",
+        "settings": {
+          "bg": "#ffffff"
+        }
       }
     },
     "content_for_index": [
       "89ebee19-e190-4091-b98c-db578364b67d",
       "9df808ab-7991-450a-a9bf-512e626600a9",
       "1803f360-90a5-4dc4-bdc4-3f5fbeb353b7",
-      "f471936a-7c84-45f9-a6a2-0f9cb17c77c7"
+      "f471936a-7c84-45f9-a6a2-0f9cb17c77c7",
+      "4008f1f7-2694-4bf9-95b0-82fdee08225b"
     ]
   }
 }
