@@ -10,6 +10,7 @@
           {% if form.posted_successfully? %}
             <p>Merci!</p>
             {% else %}
+            <div class="infolettre_form">
             <input type="hidden" name="contact[tags]" value="newsletter">
       <input type="email"
         name="contact[email]"
@@ -21,6 +22,7 @@
       <button type="submit" name="commit" id="Subscribe">
         <span class="infolettre_btn">&nbsp;&#10095;</span>
       </button>
+            </div>
     {% endif %}
   {% endform %}
     </div>
