@@ -1,6 +1,6 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
-    <h2 class="section_title_noarrow">allo</h2>
+    <h2 class="section_title_noarrow" style="color:{{ section.settings.text_color }}">allo</h2>
     <p class="section_text">allo</p>
     <div class="main_btn"><a href="#"><span class="main_btn_text"></span></a></div>
   </div>
@@ -17,6 +17,12 @@
         "id": "bg",
         "label": "Couleur de fond",
         "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Couleur du texte",
+        "default": "#000000"
       }
     ],
     "presets": [
