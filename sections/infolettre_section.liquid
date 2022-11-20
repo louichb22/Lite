@@ -10,7 +10,7 @@
           {% if form.posted_successfully? %}
             <p style="color:{{ section.settings.text_color }}"><strong>Merci!</strong></p>
             {% else %}
-            <div class="infolettre_form">
+            <div class="infolettre_form" style="max-width:{{ section.settings.infolettre_width }}%">
             <input type="hidden" name="contact[tags]" value="newsletter">
       <input type="email"
         style="background-color:white; border: none; width: 100%; font-family: articulat-cf, sans-serif; font-weight: 500; font-style: normal; font-size:14px;"
