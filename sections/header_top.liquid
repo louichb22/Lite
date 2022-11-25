@@ -8,7 +8,10 @@
     </div>
   </div>
   <div class="header_top_right">
-    <a class="header_top_button" href="{{ section.settings.top_header_button_url }}">{{ section.settings.top_header_button }}</a>
+    <div class="header_searchbar hide_desktop">
+      {%- include 'searchbar' -%}
+    </div>
+    <a class="header_top_button hide_mobile" href="{{ section.settings.top_header_button_url }}">{{ section.settings.top_header_button }}</a>
   </div>
 </div>
 </div>
