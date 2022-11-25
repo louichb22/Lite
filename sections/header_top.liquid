@@ -1,10 +1,13 @@
 <div class="container">
 <div class="header_top">
   <div class="header_top_left">
-    <div class="header_top_linklist">
+    <div class="header_top_linklist hide_mobile">
       {% for link in section.settings.top_header_menu.links %}
         <a class="header_top_text blue" href="{{ link.url }}">{{ link.title }}</a>
       {% endfor %}
+    </div>
+    <div class="header_top_text hide_desktop">
+      <a class="header_top_text blue" href="{{ section.settings.top_header_mobile_link }}">{{ section.settings.top_header_mobile_text }}</a>
     </div>
   </div>
   <div class="header_top_right">
@@ -38,6 +41,21 @@
         "type": "url",
         "id": "top_header_button_url",
         "label": "Button URL"
+      },
+      {
+        "type": "header",
+        "content": "Mobile"
+      },
+      {
+        "type": "text",
+        "id": "top_header_mobile_text",
+        "label": "Top header mobile text",
+        "default": "À propos"
+      },
+      {
+        "type": "url",
+        "id": "top_header_mobile_link",
+        "label": "Top header mobile link"
       }
     ]
   }
