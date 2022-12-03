@@ -1,19 +1,24 @@
 {
   "wrapper": "div#div_id.div_class[attribute-one=value]",
   "sections": {
-    "main": {
-      "type": "image_banner",
+    "c49595b8-3028-4e50-a49e-ced7966e70e4": {
+      "type": "simple_text_section",
       "settings": {
-      }
-    },
-    "3087ff0b-95b1-409b-8180-699da9cb0422": {
-      "type": "mission_section",
-      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "section_title": "À propos",
+        "section_subtitle": "",
+        "section_text": "Le panier collégial favorise la réalisation de projets innovants qui génèrent de la valeur pour les étudiantes, les étudiants, la communauté collégiale et la communauté de notre région.",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_color_hover": "#000000",
+        "button_text_color_hover": "#ffffff"
       }
     }
   },
   "order": [
-    "main",
-    "3087ff0b-95b1-409b-8180-699da9cb0422"
+    "c49595b8-3028-4e50-a49e-ced7966e70e4"
   ]
 }
