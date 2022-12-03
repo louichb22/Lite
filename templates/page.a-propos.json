@@ -35,10 +35,30 @@
         "button_color_hover": "#000000",
         "button_text_color_hover": "#ffffff"
       }
+    },
+    "6e25ca7f-4a4d-4f73-8ca6-4a36f65a7d71": {
+      "type": "image_with_text_section",
+      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#0f2b55",
+        "grid_layout": 50,
+        "grid_inverted": false,
+        "image": "shopify:\/\/shop_images\/LePanierCollegial_Home-1.jpg",
+        "section_title": "",
+        "section_subtitle": "",
+        "section_text": "La collaboration entre les trois institutions collégiales a pris forme par la création d’une entreprise étudiante : le Centre de compétences collégiales de l’Estrie (C3 Estrie). Cet organisme a notamment pour mission le développement de l’esprit d’entreprendre au collégial.  C³ Estrie souhaite faire faciliter l’émergence d’une nouvelle génération d’entrepreneurs.\n<br><br>\nChacune des institutions joue un rôle important dans C3 Estrie, entre autres par une implication active à son conseil d’administration. La décision de déployer le Panier collégial fut d’ailleurs entérinée par les membres du conseil d’administration.\n<br><br>\nCréé en 2015, cet organisme sans but lucratif est le véhicule parfait afin de permettre la concrétisation du Panier collégial. En mutualisant leurs forces, les trois institutions collégiales favorisent ainsi le développement efficace et efficient de compétences entrepreneuriales au collégial!",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_color_hover": "#000000",
+        "button_text_color_hover": "#ffffff"
+      }
     }
   },
   "order": [
     "c49595b8-3028-4e50-a49e-ced7966e70e4",
-    "7e596747-1b6d-45bc-bb02-2c6f970706e8"
+    "7e596747-1b6d-45bc-bb02-2c6f970706e8",
+    "6e25ca7f-4a4d-4f73-8ca6-4a36f65a7d71"
   ]
 }
