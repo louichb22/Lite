@@ -20,9 +20,11 @@
   <div class="section_container_{% if section.settings.logo_contained %}1200{% else %}fullwidth{% endif %}" style="background-color:{{ section.settings.bg_logo }}">
     <div class="partner_logo_container">
       {% for block in section.blocks %}
+        <a href="{{ block.settings.link }}">
         <div class="partner_logo_item">
           <img src="{{ block.settings.logo}}">
         </div>
+        </a>
       {% endfor %}
     </div>
   </div>
