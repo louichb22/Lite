@@ -3,7 +3,7 @@
     <h2 class="section_title_noarrow" style="margin-bottom:0px; line-height:1; color:{{ section.settings.text_color }}">{{ section.settings.section_title }}</h2>
     <h6 class="section_subtitle" style="margin-bottom:25px; color:{{ section.settings.text_color }}">{{ section.settings.section_subtitle }}</h6>
     <p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.section_text }}</p>
-    {% if section.settings.button != blank %}<div class="main_btn centered_btn" style="margin-top:50px; margin-bottom:70px;"><a href="{{ section.settings.button_link }}"><span class="main_btn_text text_section_button">{{ section.settings.button_text }}</span></a></div>{% endif %}
+    {% if section.settings.button_text != blank %}<div class="main_btn centered_btn" style="margin-top:50px; margin-bottom:70px;"><a href="{{ section.settings.button_link }}"><span class="main_btn_text text_section_button">{{ section.settings.button_text }}</span></a></div>{% endif %}
   </div>
 </div>
 
