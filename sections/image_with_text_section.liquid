@@ -7,7 +7,7 @@
       {% if section.settings.button_text != blank %}<div class="main_btn centered_btn" style="margin-top:50px; margin-bottom:70px;"><a href="{{ section.settings.button_link }}"><span class="main_btn_text text_section_button">{{ section.settings.button_text }}</span></a></div>{% endif %}
     </div>
     <div style="grid-column:{% if section.settings.grid_inverted %}1{% else %}2{% endif %}; grid-row:1">
-      <img class="image_with_text_section_image" src="{{ section.settings.image }}">
+      <img class="image_with_text_section_image" src="{{ section.settings.image | url }}">
     </div>
   </div>
 </div>
