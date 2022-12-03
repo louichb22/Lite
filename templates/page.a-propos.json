@@ -16,9 +16,27 @@
         "button_color_hover": "#000000",
         "button_text_color_hover": "#ffffff"
       }
+    },
+    "7e596747-1b6d-45bc-bb02-2c6f970706e8": {
+      "type": "image_with_text_section",
+      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "grid_layout": 70,
+        "section_title": "Allo",
+        "section_subtitle": "Allo",
+        "section_text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_color_hover": "#000000",
+        "button_text_color_hover": "#ffffff"
+      }
     }
   },
   "order": [
-    "c49595b8-3028-4e50-a49e-ced7966e70e4"
+    "c49595b8-3028-4e50-a49e-ced7966e70e4",
+    "7e596747-1b6d-45bc-bb02-2c6f970706e8"
   ]
 }
