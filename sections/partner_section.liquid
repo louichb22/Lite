@@ -20,7 +20,7 @@
   <div class="section_fullwidth" style="background-color:{{ section.settings.bg_logo }}">
     <div class="partner_logo_container">
       {% for block in section.blocks %}
-        <img src="{{ block.settings.logo | image_url }}">
+        <img src="{{ block.settings.logo}}">
       {% endfor %}
     </div>
   </div>
