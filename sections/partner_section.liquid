@@ -1,8 +1,21 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_fullwidth container_800 centered_text">
-    {% if section.settings.section_title != blank %}<h2 class="section_title_noarrow" style="margin-bottom:0px; line-height:1; color:{{ section.settings.text_color }}">{{ section.settings.section_title }}</h2>{% endif %}
-    {% if section.settings.section_subtitle != blank %}<h6 class="section_subtitle" style="margin-bottom:25px; color:{{ section.settings.text_color }}">{{ section.settings.section_subtitle }}</h6>{% endif %}
-    {% if section.settings.section_text != blank %}<p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.section_text }}</p>{% endif %}
+    {% if section.settings.section_title != blank -%}
+      <h2
+        class="section_title_noarrow"
+        style="margin-bottom:0px; line-height:1; color:{{ section.settings.text_color }}"
+      >
+        {{ section.settings.section_title }}
+      </h2>
+    {%- endif %}
+    {% if section.settings.section_subtitle != blank -%}
+      <h6 class="section_subtitle" style="margin-bottom:25px; color:{{ section.settings.text_color }}">
+        {{ section.settings.section_subtitle }}
+      </h6>
+    {%- endif %}
+    {% if section.settings.section_text != blank -%}
+      <p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.section_text }}</p>
+    {%- endif %}
   </div>
   <div class="section_fullwidth" style="background-color:{{ section.settings.bg_logo }}">
     <div class="partner_logo_container">
@@ -25,94 +38,94 @@
 </style>
 
 {% schema %}
-  {
-    "name": "Partenaires",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg",
-        "label": "Couleur de fond",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Couleur du texte",
-        "default": "#000000"
-      },
+{
+  "name": "Partenaires",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Titre de section"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Sous-titre de section"
+    },
+    {
+      "type": "textarea",
+      "id": "section_text",
+      "label": "Texte de section"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texte du bouton",
+      "default": "Bouton"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Couleur du bouton",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Couleur du texte du bouton",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_color_hover",
+      "label": "Couleur du bouton (hover)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_hover",
+      "label": "Couleur du texte du bouton (hover)",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Logo",
+      "type": "image",
+      "settings": [
       {
         "type": "text",
-        "id": "section_title",
-        "label": "Titre de section"
-      },
-      {
-        "type": "text",
-        "id": "section_subtitle",
-        "label": "Sous-titre de section"
-      },
-      {
-        "type": "textarea",
-        "id": "section_text",
-        "label": "Texte de section"
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Texte du bouton",
-        "default": "Bouton"
+        "id": "logo",
+        "label": "Logo"
       },
       {
         "type": "url",
-        "id": "button_link",
-        "label": "Lien du bouton"
-      },
-      {
-        "type": "color",
-        "id": "button_color",
-        "label": "Couleur du bouton",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "button_text_color",
-        "label": "Couleur du texte du bouton",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "button_color_hover",
-        "label": "Couleur du bouton (hover)",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "button_text_color_hover",
-        "label": "Couleur du texte du bouton (hover)",
-        "default": "#ffffff"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Logo",
-        "type": "image",
-        "settings": [
-        {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "Logo"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Lien"
-        }
-      ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Partenaires"
+        "id": "link",
+        "label": "Lien"
       }
     ]
-  }
+    }
+  ],
+  "presets": [
+    {
+      "name": "Partenaires"
+    }
+  ]
+}
 {% endschema %}
