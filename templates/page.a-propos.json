@@ -1,0 +1,19 @@
+{
+  "wrapper": "div#div_id.div_class[attribute-one=value]",
+  "sections": {
+    "main": {
+      "type": "image_banner",
+      "settings": {
+      }
+    },
+    "3087ff0b-95b1-409b-8180-699da9cb0422": {
+      "type": "mission_section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3087ff0b-95b1-409b-8180-699da9cb0422"
+  ]
+}
