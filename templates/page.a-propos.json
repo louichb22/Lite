@@ -57,6 +57,18 @@
     },
     "ee1ce35a-bdd0-423e-9304-a45798217038": {
       "type": "partner_section",
+      "blocks": {
+        "bddf7c01-c7fc-4e6f-a638-eb179153956b": {
+          "type": "image",
+          "settings": {
+            "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0606\/9098\/9108\/files\/LePanierCollegial_Logo_Etablissements_Cegep_Sherbrooke.svg?v=1670097835",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "bddf7c01-c7fc-4e6f-a638-eb179153956b"
+      ],
       "settings": {
         "bg": "#fafafa",
         "text_color": "#0f2b55",
