@@ -26,17 +26,6 @@
   </div>
 </div>
 
-<style>
-  .text_section_button{
-    color: {{ section.settings.button_text_color }};
-    background-color: {{ section.settings.button_color }};
-  }
-  .text_section_button:hover{
-    color: {{ section.settings.button_text_color_hover }};
-    background-color: {{ section.settings.button_color_hover }};
-  }
-</style>
-
 {% schema %}
 {
   "name": "Partenaires",
@@ -75,32 +64,13 @@
       "default": "Bouton"
     },
     {
-      "type": "url",
-      "id": "button_link",
-      "label": "Lien du bouton"
+      "type": "header",
+      "content": "Section des logos"
     },
     {
       "type": "color",
-      "id": "button_color",
-      "label": "Couleur du bouton",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Couleur du texte du bouton",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "button_color_hover",
-      "label": "Couleur du bouton (hover)",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color_hover",
-      "label": "Couleur du texte du bouton (hover)",
+      "id": "bg_logo",
+      "label": "Couleur de fond",
       "default": "#ffffff"
     }
   ],
