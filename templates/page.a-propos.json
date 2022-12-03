@@ -20,7 +20,7 @@
     "7e596747-1b6d-45bc-bb02-2c6f970706e8": {
       "type": "image_with_text_section",
       "settings": {
-        "bg": "#ffffff",
+        "bg": "#fafafa",
         "text_color": "#0f2b55",
         "grid_layout": 50,
         "grid_inverted": true,
