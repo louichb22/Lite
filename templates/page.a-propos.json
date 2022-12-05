@@ -71,7 +71,7 @@
       ],
       "settings": {
         "bg": "#0f2b55",
-        "text_color": "#fff",
+        "text_color": "#ffffff",
         "section_title": "Nos Partenaires",
         "section_subtitle": "",
         "section_text": "Le Panier collégial a notamment vu le jour grâce au support de certains partenaires financiers. Leur précieuse contribution a permis de rende possible le déploiement de tels services à la communauté collégiale estrienne. \n\nPour sa conception, le Panier collégial a eu l’opportunité de pouvoir compter sur une contribution financière du Pôle régional en enseignement supérieur de l’Estrie (PRESE).\n<br><br>\nDe son côté, la Fondation Cégep Sherbrooke appuie financièrement le projet afin d’en assurer sa pérennité.\n<br><br>\nMerci pour votre précieuse contribution!",
@@ -79,12 +79,19 @@
         "bg_logo": "#0f2b55",
         "logo_contained": false
       }
+    },
+    "26db8701-9cbd-4ec9-86cb-a036ad980042": {
+      "type": "space",
+      "settings": {
+        "margin": 50
+      }
     }
   },
   "order": [
     "c49595b8-3028-4e50-a49e-ced7966e70e4",
     "7e596747-1b6d-45bc-bb02-2c6f970706e8",
     "6e25ca7f-4a4d-4f73-8ca6-4a36f65a7d71",
-    "ee1ce35a-bdd0-423e-9304-a45798217038"
+    "ee1ce35a-bdd0-423e-9304-a45798217038",
+    "26db8701-9cbd-4ec9-86cb-a036ad980042"
   ]
 }
