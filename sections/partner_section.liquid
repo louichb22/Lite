@@ -16,7 +16,7 @@
     {% if section.settings.section_text != blank -%}
       <p class="section_text" style="color:{{ section.settings.text_color }}">{{ section.settings.section_text }}</p>
     {%- endif %}
-    <div class="partner_logo_container">
+    <div class="partner_logo_container" style="margin-top:40px;">
       {% for block in section.blocks %}
         <a href="{{ block.settings.link }}">
         <div class="partner_logo_item">
