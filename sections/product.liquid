@@ -1,4 +1,4 @@
-<div class="section_container_1200">
+<div class="section_container_1200" style="background-color:{{ section.settings.bg }}">
   <div class="grid" style="grid-template-columns:50% 50%">
     <div class="product_image_container">
       <img class="product_image" src="{{ product.featured_image | image_url }}">
@@ -12,6 +12,12 @@
 {% schema %}
   {
     "name": "Product",
-    "settings": []
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Couleur de fond"
+      }
+    ]
   }
 {% endschema %}
