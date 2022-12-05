@@ -1,12 +1,24 @@
+<div style="margin-top:{{ section.settings.margin }}px"></div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Espace",
+    "settings": [
+      {
+        "type": "range",
+        "id": "margin",
+        "label": "Espace",
+        "unit": "px",
+        "default": 10,
+        "min": 10,
+        "max": 200,
+        "step": 5
+      }
+    ],
+    "presets": [
+      {
+        "name": "Espace"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
