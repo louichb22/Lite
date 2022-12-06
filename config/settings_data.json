@@ -162,7 +162,8 @@
           "e679c39f-06d8-4f8e-af4a-c5534b0e43a0": {
             "type": "text",
             "settings": {
-              "title_color": "#0f2b55"
+              "title_color": "#0f2b55",
+              "vendor_color": "#000000"
             }
           }
         },
