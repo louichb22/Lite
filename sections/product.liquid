@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
-        <h1 class="product_title">{{ product.title }}</h1>
+        <h1 class="product_title" style="color:{{ block.settings.title_color }}">{{ product.title }}</h1>
       </div>
     </div>
   </div>
@@ -26,13 +26,21 @@
       "label": "Couleur de fond"
     },
     {
-      "type": "header",
-      "content": "Image de produit"
-    },
-    {
       "type": "color",
       "id": "border_color",
       "label": "Couleur de la bordure"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Images de produit"
+        }
+      ]
     }
   ]
 }
