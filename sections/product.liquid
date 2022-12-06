@@ -19,7 +19,7 @@
           {% if product.available %}<span class="product_available">Disponible</span>
           {% else %}<span class="product_unavailable">Indisponible</span>{% endif %}
         </div>
-        <span class="product_vendor" style="color:{{ block.settings.vendor_color }}">{{ product.vendor }}</span>
+        <a href="/collections/{{ product.vendor }}"<span class="product_vendor" style="color:{{ block.settings.vendor_color }}">{{ product.vendor }}</span>
         <p class="product_description" style="color:{{ block.settings.description_color }}">{{ product.description }}</p>
       </div>
       {% endcase %}{% endfor %}
