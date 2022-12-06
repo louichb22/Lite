@@ -3,6 +3,10 @@
     <div class="grid" style="grid-template-columns:50% 50%">
       <div class="product_image_container" style="border-color:{{ section.settings.border_color }};">
         <img class="product_image" style="height:250px;" src="{{ product.featured_image | image_url }}">
+        <div class="product_image_carrousel">
+          {% for image in product.images %}
+          <img class="product_image" style="height:50px;" src="{{ image | image_url }}">
+          {% endfor %}
       </div>
       <div class="product_info">
         <h1 class="product_title">{{ product.title }}</h1>
