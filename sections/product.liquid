@@ -14,7 +14,7 @@
       </div>
       {% when "text" %}
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
-        <h1 class="product_title" style="color:{{ block.settings.title_color }}">{{ product.title }}</h1>
+        <h1 class="product_title" style="color:{{ block.settings.title_color }}; border-color:{{ block.settings.title_color }}">{{ product.title }}</h1>
         <span class="product_vendor" style="color:{{ block.settings.vendor_color }}">{{ product.vendor }}</span>
       </div>
       {% endcase %}{% endfor %}
