@@ -1,20 +1,22 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
     <div class="grid" style="grid-template-columns:50% 50%; align-items:start">
-      {% for block in section.blocks %}{% case block.type %}{% when "image" %}
+      {% for block in section.blocks %}
+      {% case block.type %}
+      {% when "image" %}
       <div class="product_image_container" style="border-color:{{ section.settings.border_color }};">
         <img class="product_image" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
-          {% for image in product.images %}
-            <div class="product_image_thumbnail" style="background-image: url('{{ image | image_url }}')"></div>
-          {% endfor %}
+        {% for image in product.images %}
+          <div class="product_image_thumbnail" style="background-image: url('{{ image | image_url }}')"></div>
+        {% endfor %}
         </div>
       </div>
-        {% when "text" %}
+      {% when "text" %}
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
         <h1 class="product_title" style="color:{{ block.settings.title_color }}">{{ product.title }}</h1>
       </div>
-        {% endcase %}{% endfor %}
+      {% endcase %}{% endfor %}
     </div>
   </div>
 </div>
