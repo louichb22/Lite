@@ -163,7 +163,8 @@
             "type": "text",
             "settings": {
               "title_color": "#0f2b55",
-              "vendor_color": "#000000"
+              "vendor_color": "#000000",
+              "description_color": "#000000"
             }
           }
         },
