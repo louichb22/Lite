@@ -153,6 +153,23 @@
       },
       "product": {
         "type": "product",
+        "blocks": {
+          "d5522083-1556-493a-803a-444a8be2502d": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "e679c39f-06d8-4f8e-af4a-c5534b0e43a0": {
+            "type": "text",
+            "settings": {
+              "title_color": "#0f2b55"
+            }
+          }
+        },
+        "block_order": [
+          "d5522083-1556-493a-803a-444a8be2502d",
+          "e679c39f-06d8-4f8e-af4a-c5534b0e43a0"
+        ],
         "settings": {
           "bg": "#fafafa",
           "border_color": "#ffffff"
