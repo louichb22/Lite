@@ -150,6 +150,12 @@
           "section_text": "Afin de rester au courant des nouveaux projets, et de l’entreprenariat étudiant au grand complet!",
           "infolettre_width": 300
         }
+      },
+      "product": {
+        "type": "product",
+        "settings": {
+          "bg": "#fafafa"
+        }
       }
     },
     "content_for_index": [
