@@ -166,11 +166,17 @@
               "vendor_color": "#000000",
               "description_color": "#000000"
             }
+          },
+          "90ba80c2-9463-4aef-ad94-c337f5e7b7c2": {
+            "type": "buttons",
+            "settings": {
+            }
           }
         },
         "block_order": [
           "d5522083-1556-493a-803a-444a8be2502d",
-          "e679c39f-06d8-4f8e-af4a-c5534b0e43a0"
+          "e679c39f-06d8-4f8e-af4a-c5534b0e43a0",
+          "90ba80c2-9463-4aef-ad94-c337f5e7b7c2"
         ],
         "settings": {
           "bg": "#fafafa",
