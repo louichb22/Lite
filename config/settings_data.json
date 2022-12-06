@@ -155,7 +155,7 @@
         "type": "product",
         "settings": {
           "bg": "#fafafa",
-          "border_color": "#f4f4f4"
+          "border_color": "#fff"
         }
       }
     },
