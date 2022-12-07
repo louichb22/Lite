@@ -24,7 +24,7 @@
         {% when "buttons" %} 
         <div class="product_buttons">
         {% form 'product', product %}
-           {% if product_variant >= 2 %}allo{% else %}pas allo{% endif %}
+           {% if product.variants >= 2 %}allo{% else %}pas allo{% endif %}
           <select name="id">
           {% for variant in product.variants %}
             <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>
