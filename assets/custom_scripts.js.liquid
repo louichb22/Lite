@@ -48,11 +48,11 @@ function increaseCount(a, b) {
 
 // Product image slider
 
-const mainImage = document.getElementById("mainImage");
-const images = document.getElementByClass("product_image_thumbnail");
+const activeImage = document.querySelector(".product_image_main");
+const productImages = document.querySelectorAll(".product_image_thumbnail");
 
-images.forEach((image) => {
-    image.addEventListener("click", (event) => {
-        mainImage.src = event.target.src;
-    });
-});
+function changeImage(e) {
+  activeImage.src = e.target.src;
+}
+
+productImages.forEach(image => image.addEventListener("click", changeImage));
