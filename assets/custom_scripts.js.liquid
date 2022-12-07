@@ -45,3 +45,20 @@ function increaseCount(a, b) {
           input.value = value;
         }
       }
+
+// Product image slider
+
+const mainImage = document.getElementById("main_image");
+const images = document.querySelectorAll(".product_image");
+
+images.forEach((image) => {
+    image.addEventListener("click", (event) => {
+        mainImage.src = event.target.src;
+
+        document
+            .querySelector(".product_image_active")
+            .classList.remove("product_image_active");
+
+        event.target.classList.add("product_image_active");
+    });
+});
