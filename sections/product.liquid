@@ -8,7 +8,7 @@
         <img class="product_image_main" id="mainImage" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
         {% for image in product.images %}
-          <div class="product_image_thumbnail" style="background-image: url('{{ image | image_url }}')"></div>
+          <img class="product_image_thumbnail" src="{{ image | image_url }}">
         {% endfor %}
         </div>
       </div>
