@@ -53,7 +53,7 @@ var productImages = document.getElementsByClassName("product_image_thumbnail");
 
 function changeImage(e) {
   console.log("Click");
-  activeImage.src = e.target.src;
+  activeImage.src = productImages.src;
 }
 
 productImages.forEach(image => image.addEventListener("click", changeImage));
