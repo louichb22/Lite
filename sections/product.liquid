@@ -5,7 +5,7 @@
       {% case block.type %}
       {% when "image" %}
       <div class="product_image_container" style="border-color:{{ section.settings.border_color }};">
-        <img src="{{ product.featured_image | image_url }}" class="product_image_main" id="main-image">
+        <img src="{{ product.featured_image | image_url }}" class="product__main-image" id="main-image">
         <div class="product__slider-wrap">
           <div class="product__slider">
           <img src="https://res.cloudinary.com/dard8s66g/image/upload/v1647993803/ecommerce/smartphone/623a63c9251afc7d338faab5/vzjovup3izma7q2skzcf.jpg" class="product__image product__image--active">
