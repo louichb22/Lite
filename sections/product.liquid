@@ -29,19 +29,18 @@
             <span>+</span>
           </div>
           <a class="add_to_cart" style="background-color:blue">Ajouter au panier</a>
+          <style>
+            .add_to_cart{
+              color:{{ section.settings.button_text_color }};
+              background-color:{{ section.settings.button_bg_color }};
+            }
+          </style>
         </div>
       </div>
       {% endcase %}{% endfor %}
     </div>
   </div>
 </div>
-
-<style>
-  .add_to_cart{
-    color:{{ section.settings.button_text_color }};
-    background-color:{{ section.settings.button_bg_color }}
-  }
-</style>
 
 {% schema %}
 {
