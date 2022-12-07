@@ -4,7 +4,8 @@
       {% for block in section.blocks %}
       {% case block.type %}
       {% when "image" %}
-        <img class="product_image_main" id="main_image" src="{{ product.featured_image | image_url }}">
+      <div class="product_image_container">
+        <img class="product_image_main" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
         {% for image in product.images %}
           <div class="product_image" style="background-image: url('{{ image | image_url }}')"></div>
