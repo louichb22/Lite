@@ -21,14 +21,13 @@
         </div>
         <a href="/collections/{{ product.vendor }}"><span class="product_vendor" style="color:{{ block.settings.vendor_color }}">{{ product.vendor }}</span></a>
         <p class="product_description" style="color:{{ block.settings.description_color }}">{{ product.description }}</p>
-        {% when "buttons" %}
+        {% when "buttons" %} 
         <div class="product_buttons">
         {% form 'product', product %}
-          <input type="text" name="quantity" min="1" value="1">
-          <div class="counter">
-            <span class="down" onClick='decreaseCount(event, this)'>-</span>
-            <input type="text" value="1">
-            <span class="up"  onClick='increaseCount(event, this)'>+</span>
+          <div class="product_quantity_button">
+            <span onClick='decreaseCount(event, this)'>-</span>
+            <input type="text" name="quantity" min="1" value="1">
+            <span onClick='increaseCount(event, this)'>+</span>
           </div>
           <script type="text/javascript">
       function increaseCount(a, b) {
