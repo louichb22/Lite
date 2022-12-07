@@ -23,7 +23,7 @@
         <p class="product_description" style="color:{{ block.settings.description_color }}">{{ product.description }}</p>
         {% when "buttons" %}
         <div class="product_buttons">
-        {% form 'product' %}
+        {% form 'product', product %}
           <input class="add_to_cart" type="submit" value="Add to cart">
           <div class="product_quantity_button">
             <span>-</span>
