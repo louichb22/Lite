@@ -24,13 +24,14 @@
         {% when "buttons" %}
         <div class="product_buttons">
         {% form 'product', product %}
+          <input type="text" name="quantity" min="1" value="1">
           <input class="add_to_cart" type="submit" value="Add to cart">
-          <div class="product_quantity_button">
+          {% comment %}<div class="product_quantity_button">
             <span>-</span>
             <span>1</span>
             <span>+</span>
           </div>
-          <a class="add_to_cart">Ajouter au panier</a>
+          <a class="add_to_cart">Ajouter au panier</a>{% endcomment %}
           <style>
             .add_to_cart {
               color:{{ block.settings.button_text_color }};
