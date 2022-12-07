@@ -4,7 +4,7 @@
       {% for block in section.blocks %}
       {% case block.type %}
       {% when "image" %}
-      <div class="product_image_container">
+      <div class="product_image_container" style="border-color:{{ section.settings.border_color }};">
         <img class="product_image_main" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
         {% for image in product.images %}
