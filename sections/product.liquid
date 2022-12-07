@@ -36,6 +36,13 @@
   </div>
 </div>
 
+<style>
+  .add_to_cart{
+    color:{{ section.settings.button_text_color }};
+    background-color:{{ section.settings.button_bg_color }}
+  }
+</style>
+
 {% schema %}
 {
   "name": "Product",
@@ -100,6 +107,18 @@
         {
           "type": "header",
           "content": "Boutons d'achat"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Texte du bouton d'achat",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Fond du bouton d'achat",
+          "default": "#000000"
         }
       ]
     }
