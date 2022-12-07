@@ -25,14 +25,10 @@
         <div class="product_buttons">
         {% form 'product', product %}
           <select name="id">
-  {% for variant in product.variants %}
-    <option value="{{ variant.id }}"
-      {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-    >
-      {{ variant.title }} - {{ variant.price | money }}
-    </option>
-  {% endfor %}
-</select>
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>
+          {% endfor %}
+          </select>
           <div class="product_quantity_button">
             <span class="product_quantity_btns" onClick='decreaseCount(event, this)'>-</span>
             <input class="product_quantity" type="text" name="quantity" min="1" value="1">
