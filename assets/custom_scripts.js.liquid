@@ -48,17 +48,17 @@ function increaseCount(a, b) {
 
 // Product image slider
 
-const mainImage = document.getElementById("main_image");
-const images = document.querySelectorAll(".product_image");
+const mainImage = document.getElementById("main-image");
+const images = document.querySelectorAll(".product__image");
 
 images.forEach((image) => {
     image.addEventListener("click", (event) => {
         mainImage.src = event.target.src;
 
         document
-            .querySelector(".product_image_active")
-            .classList.remove("product_image_active");
+            .querySelector(".product__image--active")
+            .classList.remove("product__image--active");
 
-        event.target.classList.add("product_image_active");
+        event.target.classList.add("product__image--active");
     });
 });
