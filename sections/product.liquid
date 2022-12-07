@@ -33,6 +33,10 @@
             .add_to_cart{
               color:{{ block.settings.button_text_color }};
               background-color:{{ block.settings.button_bg_color }};
+            },
+            .add_to_cart:hover{
+              color:{{ block.settings.button_text_color_hover }};
+              background-color:{{ block.settings.button_bg_color_hover }};
             }
           </style>
         </div>
@@ -115,9 +119,21 @@
         },
         {
           "type": "color",
+          "id": "button_text_color_hover",
+          "label": "Texte du bouton d'achat hover",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
           "id": "button_bg_color",
           "label": "Fond du bouton d'achat",
           "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color_hover",
+          "label": "Fond du bouton d'achat hover",
+          "default": "#fff"
         }
       ]
     }
