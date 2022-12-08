@@ -9,10 +9,10 @@
         <div class="product_image_carrousel">
         {% for image in product.images %}
           <img class="product_image_thumbnail" src="{{ image | image_url }}">
-          <script>
+        {% endfor %}
+        <script>
             document.getElementsByClassName("product_image_thumbnail").addEventListener("click", console.log('click!'));
           </script>
-        {% endfor %}
         </div>
       </div>
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
