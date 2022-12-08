@@ -51,9 +51,7 @@ function increaseCount(a, b) {
 const activeImage = document.getElementById("mainImage");
 const productImages = document.getElementsByClassName("product_image_thumbnail");
 
-function changeImage(e) {
+function changeImage() {
   console.log("Click");
-  activeImage.src = e.target.src;
+  activeImage.src = target.src;
 }
-
-productImages.forEach(image => image.addEventListener("click", changeImage));
