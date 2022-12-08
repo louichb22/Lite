@@ -8,14 +8,9 @@
         <img class="product_image_main" id="mainImage" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
         {% for image in product.images %}
-          <img class="product_image_thumbnail" onclick="click()" src="{{ image | image_url }}">
+          <img class="product_image_thumbnail" onclick="console.log('allo')" src="{{ image | image_url }}">
         {% endfor %}
         </div>
-        <script>
-          function click(){
-            console.log("click!")
-          }
-        </script>
       </div>
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
         {% when "text" %}
