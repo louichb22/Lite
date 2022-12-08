@@ -8,7 +8,10 @@
         <img class="product_image_main" id="mainImage" src="{{ product.featured_image | image_url }}">
         <div class="product_image_carrousel">
         {% for image in product.images %}
-          <img class="product_image_thumbnail" onclick="console.log('allo')" src="{{ image | image_url }}">
+          <img class="product_image_thumbnail" src="{{ image | image_url }}">
+          <script>
+            document.getElementsByClassName("product_image_thumbnail").addEventListener("click", console.log('click!'));
+          </script>
         {% endfor %}
         </div>
       </div>
