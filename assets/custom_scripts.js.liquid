@@ -48,12 +48,12 @@ function increaseCount(a, b) {
 
 // Product image slider
 
-const activeImage = document.getElementById("mainImage");
-const productImages = document.getElementsByClassName("product_image_thumbnail");
+const images = document.getElementsByClassName("product_image_thumbnail");
 
-function changeImage() {
-  console.log("Click");
-  mainImage.src = productImages.src;
+const changeImage = e => {
+  console.log(e.target.src);
 }
 
-document.getElementByClassName("product_image_thumbnail").addEventListener("click", changeImage());
+for (let image of images) {
+  image.addEventListener("click", changeImage);
+}
