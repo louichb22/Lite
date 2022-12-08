@@ -54,6 +54,4 @@ const changeImage = e => {
   console.log(e.target.src);
 }
 
-for (let image of images) {
-  image.addEventListener("click", changeImage);
-}
+document.getElementsByClassName("product_image_thumbnail").addEventListener("click", changeImage);
