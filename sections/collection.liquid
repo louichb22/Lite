@@ -1,31 +1,29 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
-    <div class="collection_container">
-      <h1 class="collection_title">{{ collection.title }}</h1>
-      <div class="collection_products_container">
-        {% for product in collection.products %}
-          <item class="collection_item">
-            <img class="product_image" src="{{ product.featured_image | image_url }}">
-            <h2 class="product_title">{{ product.title }}</h2>
-            <span class="product_vendor">{{ product.vendor }}</span>
-            <span class="product_price">{{ product.price_min | money_without_currency }} $</span>
-          </item>
-        {% endfor %}
-      </div>
+    <h1 class="collection_title">{{ collection.title }}</h1>
+    <div class="collection_products_container">
+      {% for product in collection.products %}
+        <item class="collection_item">
+          <img class="product_image" src="{{ product.featured_image | image_url }}">
+          <h2 class="product_title">{{ product.title }}</h2>
+          <span class="product_vendor">{{ product.vendor }}</span>
+          <span class="product_price">{{ product.price_min | money_without_currency }} $</span>
+        </item>
+      {% endfor %}
     </div>
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Collection",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg",
-        "label": "Couleur de fond",
-        "default": "#fff"
-      }
-    ]
-  }
+{
+  "name": "Collection",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Couleur de fond",
+      "default": "#fff"
+    }
+  ]
+}
 {% endschema %}
