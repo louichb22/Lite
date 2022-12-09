@@ -187,8 +187,10 @@
         "type": "collection",
         "settings": {
           "bg": "#fafafa",
-          "col": 4,
-          "section_bg": "#fff"
+          "col": 5,
+          "section_bg": "#ffffff",
+          "item_bg": "#fafafa",
+          "item_bg_hover": "#ebebeb"
         }
       }
     },
