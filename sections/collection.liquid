@@ -3,10 +3,7 @@
     <h1 class="collection_title">
       {% if collection.title == 'Produits' %}Tous les produits{% else %}{{ collection.title }}{% endif %}
     </h1>
-    <div
-      class="collection_products_container col{{ section.settings.col }}"
-      style="background-color:{{ section.settings.section_bg }}"
-    >
+    <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
       {% for product in collection.products %}
         <a href="{{ product.url }}">
           <item class="collection_item">
