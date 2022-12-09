@@ -4,9 +4,7 @@
     <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
       {% for product in collection.products %}
         <item class="collection_item">
-          <div>
-            <img class="product_image" src="{{ product.featured_image | image_url }}">
-          </div>
+          <img class="product_image" src="{{ product.featured_image | image_url }}">
           <h2 class="product_title">{{ product.title }}</h2>
           <span class="product_vendor">{{ product.vendor }}</span>
           <span class="product_price">{{ product.price_min | money_without_currency }} $</span>
