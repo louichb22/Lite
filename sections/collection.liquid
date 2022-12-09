@@ -14,6 +14,12 @@
   </div>
 </div>
 
+<style>
+  .collection_item:hover{
+    background-color:{{ section.settings.item_bg_hover }};
+  }
+</style>
+
 {% schema %}
 {
   "name": "Collection",
@@ -44,6 +50,12 @@
       "id": "item_bg",
       "label": "Couleur de fond de l'item",
       "default": "#fafafa"
+    },
+    {
+      "type": "color",
+      "id": "item_bg_hover",
+      "label": "Couleur de fond de l'item hover",
+      "default": "#ebebeb"
     }
   ]
 }
