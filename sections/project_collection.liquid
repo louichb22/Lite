@@ -1,9 +1,15 @@
-<p>collection</p>
+{% assign collection = section.settings.collection %}
 
 {% schema %}
   {
     "name": "Collection",
-    "settings": [],
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Sélectionner la collection"
+      }
+    ],
     "presets":[
       {
         "name": "Collection"
