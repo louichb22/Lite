@@ -6,7 +6,7 @@
     <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
       {% for product in collection.products %}
         <a href="{{ product.url }}">
-          <item class="collection_item">
+          <item class="collection_item" style="color:black;">
             <img class="product_image" src="{{ product.featured_image | image_url }}" style="margin-bottom:20px;">
             <h2 class="product_title">{{ product.title }}</h2>
             <span class="product_vendor">{{ product.vendor }}</span>
