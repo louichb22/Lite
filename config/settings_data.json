@@ -186,8 +186,9 @@
       "collection": {
         "type": "collection",
         "settings": {
-          "bg": "#fff",
-          "col": 4
+          "bg": "#fafafa",
+          "col": 4,
+          "section_bg": "#fff"
         }
       }
     },
