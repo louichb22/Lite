@@ -1,8 +1,7 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
     <h1 class="collection_title">{% if collection.title == "Produits" %}Tous les produits{% else %}{{ collection.title }}{% endif %}</h1>
-    {% assign col = section.settings.col %}
-    <div class="collection_products_container" style="grid-template-columns:{% case col %}{% when '2' %}50% 50%{% when '3' %}33% 33% 33%{% endcase %}">
+    <div class="collection_products_container" style="grid-template-columns:{% case section.settings.col %}{% when '2' %}50% 50%{% when '3' %}33% 33% 33%{% endcase %}">
       {% for product in collection.products %}
         <item class="collection_item">
           <img class="product_image" src="{{ product.featured_image | image_url }}">
