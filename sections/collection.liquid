@@ -3,7 +3,7 @@
     <h1 class="collection_title">{% if collection.title == "Produits" %}Tous les produits{% else %}{{ collection.title }}{% endif %}</h1>
     <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
       {% for product in collection.products %}
-        <item class="collection_item" style="background-color:{{ section.settings.item_bg }}">
+        <item class="collection_item" style="background-color:{{ section.settings.item_bg }}; margin-bottom:20px;">
           <img class="product_image" src="{{ product.featured_image | image_url }}">
           <h2 class="product_title">{{ product.title }}</h2>
           <span class="product_vendor">{{ product.vendor }}</span>
