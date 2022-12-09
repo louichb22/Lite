@@ -182,6 +182,13 @@
           "bg": "#fafafa",
           "border_color": "#ffffff"
         }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "bg": "#fff",
+          "col": 2
+        }
       }
     },
     "content_for_index": [
