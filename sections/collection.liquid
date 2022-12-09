@@ -6,7 +6,7 @@
     <div class="collection_filters_container">
       <select class="product_variant_selector" style="margin-bottom:20px;" name="id">
       {% for product_vendor in shop.vendors %}
-        <option>{{ product_vendor }}</option>
+        <option href="/collections/{{ product_vendor }}">{{ product_vendor }}</option>
       {% endfor %}
       </select>
     <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
