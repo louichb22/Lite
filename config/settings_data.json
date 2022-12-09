@@ -192,6 +192,12 @@
           "item_bg": "#fafafa",
           "item_bg_hover": "#ebebeb"
         }
+      },
+      "project_collection": {
+        "type": "project_collection",
+        "settings": {
+          "collection": "themedevblet"
+        }
       }
     },
     "content_for_index": [
