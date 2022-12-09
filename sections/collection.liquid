@@ -8,7 +8,7 @@
             <img class="product_image" src="{{ product.featured_image | image_url }}">
             <h2 class="product_title">{{ product.title }}</h2>
             <span class="product_vendor">{{ product.vendor }}</span>
-            <span class="product_price">{{ product.price_min }}</span>
+            <span class="product_price">{{ product.price_min | t }}</span>
           </item>
         {% endfor %}
       </div>
