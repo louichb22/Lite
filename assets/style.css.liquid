@@ -1,3 +1,5 @@
+/* GENERAL TEXT */
+
 p, span, a {
   font-family: articulat-cf, sans-serif;
   font-weight: 500;
@@ -20,9 +22,15 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+
+/* GENERAL BODY */
+
 body {
   margin: 0;
 }
+
+/* SECTION TYPES */
+
 .container{
   box-sizing: border-box;
   padding-left: 10px;
@@ -45,6 +53,30 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* GENERAL SETTINGS */
+
+.col2{
+  display:grid;
+  grid-template-columns:50% 50%;
+}
+.col3{
+  display:grid;
+  grid-template-columns:33% 33% 33%;
+}
+.col4{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25%;
+}
+.col5{
+  display:grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+}
+.col6{
+  display:grid;
+  grid-template-columns:16% 16% 16% 16% 16% 16%;
+}
+
 .header_top {
   max-width: 1200px;
   margin: 0 auto;
@@ -683,21 +715,6 @@ a .footer_text:hover{
   display:grid;
   gap:20px;
   align-items:center;
-}
-.col2{
-  grid-template-columns:50% 50%;
-}
-.col3{
-  grid-template-columns:33% 33% 33%
-}
-.col4{
-  grid-template-columns:25% 25% 25% 25%;
-}
-.col5{
-  grid-template-columns:20% 20% 20% 20% 20%;
-}
-.col6{
-  grid-template-columns:16% 16% 16% 16% 16% 16%;
 }
 
 @media (max-width:700px) {
