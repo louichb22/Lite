@@ -1,7 +1,29 @@
 {% assign collection = section.settings.collection %}
-{% for product in collection.products %}
-  <h1>{{ product.title }}</h1>
-{% endfor %}
+<div style="background-color:{{ section.settings.bg }}">
+  <div class="section_container_1200">
+    <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
+      {% for product in collection.products %}
+        <a href="{{ product.url }}">
+          <item class="collection_item" style="color:black;">
+            <img class="product_image" src="{{ product.featured_image | image_url }}" style="margin-bottom:20px;">
+            <h2 class="product_title">{{ product.title }}</h2>
+            <span class="product_vendor">{{ product.vendor }}</span>
+            <span class="product_price">{{ product.price_min | money_without_currency }} $</span>
+          </item>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .collection_item{
+    background-color:{{ section.settings.item_bg }};
+  }
+  .collection_item:hover{
+    background-color:{{ section.settings.item_bg_hover }};
+  }
+</style>
 
 {% schema %}
   {
@@ -11,7 +33,40 @@
         "type": "collection",
         "id": "collection",
         "label": "Sélectionner la collection"
-      }
+      },
+      {
+      "type": "color",
+      "id": "bg",
+      "label": "Couleur de fond",
+      "default": "#fafafa"
+    },
+    {
+      "type": "range",
+      "id": "col",
+      "label": "Nombre de colonnes",
+      "default": 3,
+      "min": 2,
+      "max": 6,
+      "step": 1
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Couleur de fond intérieure",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "item_bg",
+      "label": "Couleur de fond de l'item",
+      "default": "#fafafa"
+    },
+    {
+      "type": "color",
+      "id": "item_bg_hover",
+      "label": "Couleur de fond de l'item hover",
+      "default": "#ebebeb"
+    }
     ],
     "presets":[
       {
