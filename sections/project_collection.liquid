@@ -1,4 +1,7 @@
 {% assign collection = section.settings.collection %}
+{% for product in collection %}
+  <h1>{{ product.title }}</h1>
+{% endfor %}
 
 {% schema %}
   {
