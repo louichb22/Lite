@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <input class="cart_checkout_btn" style="background-color:{{ section.settings.color }}; color:white;" type="submit" name="checkout" value="Passer au paiement">
+      <input class="cart_checkout_btn" type="submit" name="checkout" value="Passer au paiement">
     </form>
   </div>
 </div>
@@ -49,9 +49,13 @@
   .cart_item{
     border-color:{{ section.settings.border }}
   }
+  .cart_checkout_btn{
+    background-color:{{ section.settings.color }};
+    color:white;
+  }
   .cart_checkout_btn:hover{
     background-color:{{ section.settings.bg }};
-    border:solid 3px {{ section.settings.color }};
+    color:{{ section.settings.color }};
   }
 </style>
 
