@@ -10,12 +10,12 @@
         <span class="cart_remove_btn"></span>
       </div>
       {% for line_item in cart.items %}
-        <div class="cart_item" style="color:{{ section.settings.color }}">
-          <span>{{ line_item.title }}</span>
-          <span class="cart_item_price">{{ line_item.final_price | money }}</span>
-          <span>{{ line_item.quantity }}</span>
-          <span>{{ line_item.final_line_price | money }}</span>
-          <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer">X</a>
+        <div class="cart_item">
+          <span style="color:{{ section.settings.color }}">{{ line_item.title }}</span>
+          <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
+          <span style="color:{{ section.settings.color }}">{{ line_item.quantity }}</span>
+          <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
+          <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer" style="color:{{ section.settings.color }}">X</a>
         </div>
       {% endfor %}
     </div>
