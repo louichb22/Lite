@@ -15,7 +15,7 @@
           <span class="cart_item_price">{{ line_item.final_price | money }}</span>
           <span>{{ line_item.quantity }}</span>
           <span>{{ line_item.final_line_price | money }}</span>
-          <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="{{ 'cart.general.remove' | t }}">X</a>
+          <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer">X</a>
         </div>
       {% endfor %}
     </div>
