@@ -3,10 +3,10 @@
     <h1 class="section_title_noarrow" style="color:{{ section.settings.color }}; margin:0px;">{{ section.settings.cart_header }}</h1>
     <div class="cart_items_container">
       <div class="cart_item">
-        <span>Article</span>
-        <span class="cart_item_price">Prix</span>
-        <span>Qté</span>
-        <span>Total</span>
+        <span style="color:{{ section.settings.color }}">Article</span>
+        <span class="cart_item_price" style="color:{{ section.settings.color }}">Prix</span>
+        <span style="color:{{ section.settings.color }}">Qté</span>
+        <span style="color:{{ section.settings.color }}">Total</span>
         <span class="cart_remove_btn"></span>
       </div>
       {% for line_item in cart.items %}
