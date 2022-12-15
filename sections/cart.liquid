@@ -20,6 +20,12 @@
   </div>
 </div>
 
+<style>
+  .cart_item{
+    border-color:{{ section.settings.border }}
+  }
+</style>
+
 {% schema %}
   {
     "name": "Section name",
@@ -34,6 +40,12 @@
         "type": "color",
         "id": "color",
         "label": "Couleur d'accent",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "border",
+        "label": "Couleur de bordure",
         "default": "#000000"
       },
       {
