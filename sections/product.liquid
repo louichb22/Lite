@@ -10,11 +10,6 @@
         {% for image in product.images %}
           <img class="product_image_thumbnail" onclick="click()" src="{{ image | image_url }}">
         {% endfor %}
-          <script>
-            function click(){
-              console.log("allo")
-            }
-          </script>
         </div>
       </div>
       <div class="product_info" style="border-color:{{ section.settings.border_color }};">
