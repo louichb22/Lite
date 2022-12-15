@@ -5,7 +5,7 @@
       {% for line_item in cart.items %}
         <div class="cart_item">
           <span>{{ line_item.title }}</span>
-          <span>{{ line_item.final_price | money }}</span>
+          <span class="cart_item_price">{{ line_item.final_price | money }}</span>
           <span>{{ line_item.quantity }}</span>
           <span>{{ line_item.final_line_price | money }}</span>
         </div>
