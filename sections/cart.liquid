@@ -2,44 +2,46 @@
   <div class="section_container_1200">
     <h1 class="section_title_noarrow" style="color:{{ section.settings.color }}; margin:0px;">{{ section.settings.cart_header }}</h1>
     <form action="/cart" method="post" novalidate>
-    <div class="cart_items_container">
-      <div class="cart_item">
-        <span style="font-weight:600; color:{{ section.settings.color }}">Article</span>
-        <span class="cart_item_price" style="font-weight:600; color:{{ section.settings.color }}">Prix</span>
-        <span style="font-weight:600; color:{{ section.settings.color }}">Qté</span>
-        <span style="font-weight:600; color:{{ section.settings.color }}">Total</span>
-        <span class="cart_remove_btn"></span>
-      </div>
-      {% for line_item in cart.items %}
+      <div class="cart_items_container">
         <div class="cart_item">
-          <span style="color:{{ section.settings.color }}">{{ line_item.title }}</span>
-          <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
-          <span style="color:{{ section.settings.color }}">{{ line_item.quantity }}</span>
-          <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
-          <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer" style="color:{{ section.settings.color }}">X</a>
+          <span style="font-weight:600; color:{{ section.settings.color }}">Article</span>
+          <span class="cart_item_price" style="font-weight:600; color:{{ section.settings.color }}">Prix</span>
+          <span style="font-weight:600; color:{{ section.settings.color }}">Qté</span>
+          <span style="font-weight:600; color:{{ section.settings.color }}">Total</span>
+          <span class="cart_remove_btn"></span>
         </div>
-      {% endfor %}
-    </div>
-    <div class="cart_bottom_container">
-      <div class="cart_bottom_item cart_note">
-        <span>Laisser une note</span>
-        <textarea class="cart_note_placeholder" name="note" id="CartSpecialInstructions" placeholder="Écrire ici">{{ cart.note }}</textarea>
+        {% for line_item in cart.items %}
+          <div class="cart_item">
+            <span style="color:{{ section.settings.color }}">{{ line_item.title }}</span>
+            <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
+            <span style="color:{{ section.settings.color }}">{{ line_item.quantity }}</span>
+            <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
+            <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer" style="color:{{ section.settings.color }}">X</a>
+          </div>
+        {% endfor %}
       </div>
-      <div class="cart_bottom_item">
-        <div class="cart_bottom_line">
-          <span>Sous-Total</span>
-          <span>{{ cart.items_subtotal_price | money }}</span>
+      <div class="cart_bottom_container">
+        <div class="cart_bottom_item cart_note">
+          <span>Laisser une note</span>
+          <textarea class="cart_note_placeholder" name="note" id="CartSpecialInstructions" placeholder="Écrire ici">{{ cart.note }}</textarea>
         </div>
-        <div class="cart_bottom_line">
-          <span>Taxes</span>
-          <span>{{ cart.total_price | times: 0.14975 | money }}</span>
-        </div>
-        <div class="cart_bottom_line">
-          <span>Total</span>
-          <span>{{ cart.total_price | times: 0.14975 | plus: cart.total_price | money }}</span>
+        <div class="cart_bottom_item">
+          <div class="cart_bottom_line">
+            <span>Sous-Total</span>
+            <span>{{ cart.items_subtotal_price | money }}</span>
+          </div>
+          <div class="cart_bottom_line">
+            <span>Taxes</span>
+            <span>{{ cart.total_price | times: 0.14975 | money }}</span>
+          </div>
+          <div class="cart_bottom_line">
+            <span>Total</span>
+            <span>{{ cart.total_price | times: 0.14975 | plus: cart.total_price | money }}</span>
+          </div>
         </div>
       </div>
     </div>
+    </form>
   </div>
 </div>
 
