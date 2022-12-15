@@ -3,7 +3,12 @@
     <h1 class="section_title_noarrow" style="color:{{ section.settings.color }}; margin:0px;">{{ section.settings.cart_header }}</h1>
     <div class="cart_items_container">
       {% for line_item in cart.items %}
-        <span>{{ line_item.title }} - x{{ line_item.quantity }} - {{ line_item.final_price | money }}</span>
+        <div class="cart_item">
+          <span>{{ line_item.title }}</span>
+          <span>{{ line_item.final_price | money }}</span>
+          <span>{{ line_item.quantity }}</span>
+          <span>{{ line_item.final_line_price | money }}</span>
+        </div>
       {% endfor %}
     </div>
   </div>
