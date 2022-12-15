@@ -21,14 +21,18 @@
     </div>
     <div class="cart_bottom_container">
       <div style="border-radius:20px; background-color:white; padding:12px; margin-top:20px;">
-      <div class="cart_bottom_line">
-        <span>Sous-Total</span>
-        <span>{{ cart.items_subtotal_price | money }}</span>
-      </div>
-      <div class="cart_bottom_line">
-        <span>Taxes</span>
-        <span>{{ cart.total_price | times: 0.14975 | money }}</span>
-      </div>
+        <div class="cart_bottom_line">
+          <span>Sous-Total</span>
+          <span>{{ cart.items_subtotal_price | money }}</span>
+        </div>
+        <div class="cart_bottom_line">
+          <span>Taxes</span>
+          <span>{{ cart.total_price | times: 0.14975 | money }}</span>
+        </div>
+        <div class="cart_bottom_line">
+          <span>Total</span>
+          <span>{{ cart.total_price | times: 0.14975 | plus: cart.total_price | money }}</span>
+        </div>
       </div>
     </div>
   </div>
