@@ -2,6 +2,12 @@
   <div class="section_container_1200">
     <h1 class="section_title_noarrow" style="color:{{ section.settings.color }}; margin:0px;">{{ section.settings.cart_header }}</h1>
     <div class="cart_items_container">
+      <div class="cart_item">
+        <span>Article</span>
+        <span>Prix</span>
+        <span>Qté</span>
+        <span>Total</span>
+      </div>
       {% for line_item in cart.items %}
         <div class="cart_item">
           <span>{{ line_item.title }}</span>
