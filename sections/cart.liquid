@@ -1,9 +1,9 @@
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
-    <h1 class="cart_header"></h1>
+    <h1 class="cart_header">{{ section.settings.cart_header }}</h1>
     <div class="cart_items_container">
       {% for line_item in cart.items %}
-        <span>{{ line_item.title }} - x{{ line_item.quantity }} - {{ line_item.final_price }}</span>
+        <span>{{ line_item.title }} - x{{ line_item.quantity }} - {{ line_item.final_price | money }}</span>
       {% endfor %}
     </div>
   </div>
@@ -12,6 +12,19 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Couleur de fond",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "cart_header",
+        "label": "Titre de la page",
+        "default": "Votre panier d'achat"
+      }
+    ]
   }
 {% endschema %}
