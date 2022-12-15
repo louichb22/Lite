@@ -198,6 +198,14 @@
         "settings": {
           "collection": "themedevblet"
         }
+      },
+      "cart": {
+        "type": "cart",
+        "settings": {
+          "bg": "#fafafa",
+          "color": "#000000",
+          "cart_header": "Votre panier d'achat"
+        }
       }
     },
     "content_for_index": [
