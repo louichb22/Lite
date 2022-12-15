@@ -20,7 +20,11 @@
       {% endfor %}
     </div>
     <div class="cart_bottom_container">
-      <div style="border-radius:20px; background-color:white; padding:12px; margin-top:20px;">
+      <div class="cart_bottom_item">
+        <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+        <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+      </div>
+      <div class="cart_bottom_item">
         <div class="cart_bottom_line">
           <span>Sous-Total</span>
           <span>{{ cart.items_subtotal_price | money }}</span>
