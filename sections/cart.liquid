@@ -14,7 +14,7 @@
           <div class="cart_item">
             <span><a href="{{ line_item.url }}" style="color:{{ section.settings.color }}">{{ line_item.title }}</a></span>
             <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
-            <span style="color:{{ section.settings.color }}"><input class="product_quantity" type="text"
+            <span style="color:{{ section.settings.color }}"><input class="cart_product_quantity" type="number"
                      name="updates[]"
                      id="updates_{{ line_item.key }}"
                      value="{{ line_item.quantity }}"
