@@ -19,7 +19,6 @@
         </div>
       {% endfor %}
     </div>
-    {% assign cart.items_subtotal_price | times:0.15975 = taxes %}
     <div class="cart_bottom_container">
       <div class="cart_bottom_line">
         <span>Sous-Total</span>
@@ -27,7 +26,7 @@
       </div>
       <div class="cart_bottom_line">
         <span>Taxes</span>
-        <span>{{ taxes }}</span>
+        <span>{{ tax_line.price }}</span>
       </div>
     </div>
   </div>
