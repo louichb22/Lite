@@ -14,7 +14,12 @@
           <div class="cart_item">
             <span><a href="{{ line_item.url }}" style="color:{{ section.settings.color }}">{{ line_item.title }}</a></span>
             <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
-            <span style="color:{{ section.settings.color }}">{{ line_item.quantity }}</span>
+            <span style="color:{{ section.settings.color }}"><input type="number"
+                     name="updates[]"
+                     id="updates_{{ item.key }}"
+                     value="{{ item.quantity }}"
+                     min="0"
+                     aria-label="{{ 'cart.general.item_quantity' | t }}"></span>
             <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
             <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer" style="color:{{ section.settings.color }}">X</a>
           </div>
