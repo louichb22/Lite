@@ -12,7 +12,7 @@
         </div>
         {% for line_item in cart.items %}
           <div class="cart_item">
-            <span style="color:{{ section.settings.color }}"><a href="{{ line_item.url }}">{{ line_item.title }}</a></span>
+            <span><a href="{{ line_item.url }}" style="color:{{ section.settings.color }}">{{ line_item.title }}</a></span>
             <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
             <span style="color:{{ section.settings.color }}">{{ line_item.quantity }}</span>
             <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
