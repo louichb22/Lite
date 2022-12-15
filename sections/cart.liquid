@@ -26,7 +26,7 @@
       </div>
       <div class="cart_bottom_line">
         <span>Taxes</span>
-        <span>{{ cart.total_price }}</span>
+        <span>{{ cart.total_price | times: 0.14975 | money }}</span>
       </div>
     </div>
   </div>
