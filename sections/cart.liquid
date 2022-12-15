@@ -16,10 +16,10 @@
             <span class="cart_item_price" style="color:{{ section.settings.color }}">{{ line_item.final_price | money }}</span>
             <span style="color:{{ section.settings.color }}"><input type="number"
                      name="updates[]"
-                     id="updates_{{ line_itemitem.key }}"
-                     value="{{ line_itemitem.quantity }}"
+                     id="updates_{{ line_item.key }}"
+                     value="{{ line_item.quantity }}"
                      min="0"
-                     aria-label="{{ line_item.quantity }}"></span>
+                     aria-label="{{ 'cart.general.item_quantity' | t }}"></span>
             <span style="color:{{ section.settings.color }}">{{ line_item.final_line_price | money }}</span>
             <a class="cart_remove_btn" href="{{routes.cart_change_url}}?line={{ forloop.index }}&amp;quantity=0" title="Retirer" style="color:{{ section.settings.color }}">X</a>
           </div>
