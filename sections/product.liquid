@@ -26,7 +26,7 @@
         {% form 'product', product %}
           <select class="product_variant_selector" style="margin-bottom:20px;" name="id">
           {% for variant in product.variants %}
-            <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>
+            {% if variant.title == "Default Title" %}{% else %}<option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>{% endif %}
           {% endfor %}
           </select>
           <div style="display:flex; gap:20px;">
