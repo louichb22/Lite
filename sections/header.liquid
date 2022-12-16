@@ -43,6 +43,11 @@
 <div class="header_menu">
   {% for link in section.settings.main_menu.links %}
     <a class="header_menu_item{% if link.active %} active{% endif %}{% if link.links.size > 0 %} has_children{% endif %}" href="{{ link.url }}"><span style="font-weight:700">{{ link.title }}</span></a>
+    {% if link.links.size > 0 %}
+      {% for link in link.links %}
+    <a class="header_menu_dropdown_item" href="{{ link.url }}"><span style="font-weight:700">{{ link.title }}</span></a>
+  {% endfor %}
+    {% endif %}
   {% endfor %}
 </div>
 </div>
