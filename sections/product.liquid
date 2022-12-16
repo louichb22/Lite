@@ -24,7 +24,7 @@
         {% when "buttons" %} 
         <div class="product_buttons">
         {% form 'product', product %}
-          {% if product.variants > 0 %}
+          {% if product.variants.size > 0 %}
           <select class="product_variant_selector" style="margin-bottom:20px;" name="id">
           {% for variant in product.variants %}
             }<option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>
