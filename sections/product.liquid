@@ -24,13 +24,13 @@
         {% when "buttons" %} 
         <div class="product_buttons">
         {% form 'product', product %}
-          {% if product.options.size > 1 %}
+          {% unless product.has_only_default_variant %}
           <select class="product_variant_selector" style="margin-bottom:20px;" name="id">
           {% for variant in product.variants %}
             }<option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>{{ variant.title }} - {{ variant.price | money }}</option>
           {% endfor %}
           </select>
-          {% endif %}
+          {% endunless %}
           <div style="display:flex; gap:20px;">
           <div class="product_quantity_button">
             <span class="product_quantity_btns" onClick='decreaseCount(event, this)'>-</span>
