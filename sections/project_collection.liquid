@@ -1,7 +1,7 @@
 {% assign collection = section.settings.collection %}
 <div style="background-color:{{ section.settings.bg }}">
   <div class="section_container_1200">
-    <h2 class="section_title centered_text">Découvrez les produits de {{ page.title }}</h2>
+    <h2 class="section_title centered_text">Découvrez leurs produits</h2>
     <div class="collection_products_container col{{ section.settings.col }}" style="background-color:{{ section.settings.section_bg }}">
       {% for product in collection.products %}
         <a href="{{ product.url }}">
