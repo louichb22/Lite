@@ -106,9 +106,10 @@
           "9e9c57d6-db98-4d6f-b59d-894b3c546775": {
             "type": "slide",
             "settings": {
-              "text": "Estrinema",
+              "image": "shopify:\/\/shop_images\/06.jpg",
+              "text": "22 Agence Créative",
               "text_color": "#ffffff",
-              "link": ""
+              "link": "shopify:\/\/pages\/test"
             }
           }
         },
