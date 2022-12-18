@@ -19,6 +19,12 @@
         "id": "use_top_header",
         "label": "Top Header",
         "default": true
+      },
+      {
+        "type": "color",
+        "id": "general_color",
+        "label": "Accent principal",
+        "default": "#000000"
       }
     ]
   }
