@@ -14,7 +14,7 @@
     <div class="header_searchbar hide_desktop">
       {%- include 'searchbar' -%}
     </div>
-    <a class="header_top_button hide_mobile" href="{{ section.settings.top_header_button_url }}">{{ section.settings.top_header_button }}</a>
+    {% if section.settings.top_header_button != blank %}<a class="header_top_button hide_mobile" href="{{ section.settings.top_header_button_url }}">{{ section.settings.top_header_button }}</a>{% endif %}
   </div>
 </div>
 </div>
